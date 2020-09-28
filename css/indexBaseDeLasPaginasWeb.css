@@ -1,5 +1,5 @@
 footer{
-  background-color: grey;
+  background-color: #78c8ff;
   display: flex;
 
   justify-content: space-around;
@@ -7,12 +7,30 @@ footer{
 }
 header{
   display: flex;
-  background-color: black;
+  background-color: #78c8ff;
     height: 100px;
      color:white;
+    fon;
      justify-content: space-around;
 }
 img{
   height: 90px;
-    width: 90px;}
-ul{background-color: grey}
+    width: 90px;
+}
+ul{
+background-color: grey
+}
+
+#searchBoxConfig{
+  height: 20px;
+  width: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#tituloDeLaPagina {
+  font-family: "Bebas Neue";
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
+}
