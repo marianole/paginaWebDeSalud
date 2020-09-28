@@ -30,7 +30,9 @@ background-color: grey
 
 #tituloDeLaPagina {
   font-family: "Bebas Neue";
-  font-size: xxx-large;
+  font-size: xxx-large; /*No sé porque por acá aparece subrayada en rojo pero si en chrome funciona perfectamente. Solo
+  habria que centrarlo un poco más al igual que el logo. Yo después voy a sacarle el fondo con photoshop asi queda como
+  formato png*/
   display: flex;
   justify-content: center;
 }
