@@ -4,40 +4,56 @@
   <meta charset="UTF-8">
   <title>Lista de Enfermedades</title>
 </head>
-<header>
-  <!--acoplar con el diseño principal de la pagina de inicio-->
-</header>
-<body>
-  <section id="filtroBox">
-    <input list="filtro" id="filtroEnfermedades" name="filtroEnf" placeholder="Filtrar por enfermedades...">
-    <datalist id="filtro">
-      <select>
-        <option value="Covid-19"></option>
-        <option value="Asma"></option>
-        <option value="Epilepsia"></option>
-        <option value="Zika"></option>
+  <header>
+    <!--acoplar con el diseño principal de la pagina de inicio-->
+    <img src="icono.jpg" alt="icono">
+    <input list="Buscador" name="datalist"  placeholder="Ingrese aquí para buscar...">
+    <datalist id="Buscador"class="">
+      <select class="" name="">
+        <option value="coronavirus"></option>
+        <option value="cancer"></option>
       </select>
+
     </datalist>
-  </section>
-  <div id="enfermedadCovid">
-    <h3>Covid-19</h3>
-    <p>Hola mundo!</p>
-    <input type="button" name="botonDetalles" id="botonDetalleCovid" value="Ver detalle">
-  </div>
-  <div id="Asmaenfermedad">
-    <h3>Asma</h3>
-    <p>Hello World!</p>
-    <input type="button" name="botonDetalles" id="botonDetalleAsma" value="Ver detalle">
-  </div>
-  <div id="Zikaenfermedad">
-    <h3>Zika</h3>
-    <p>Hello World!</p>
-    <input type="button" name="botonDetalles" id="botonDetalleZika" value="Ver detalle">
-  </div>
-  <div id="epilepsiaEnfermedad">
-    <h3>Epilepsia</h3>
-    <p>Hello World!</p>
-    <input type="button" name="botonDetalles" id="botonDetalleEpilepsia" value="Ver detalle">
-  </div>
-</body>
+    <div id="menú">
+      <h3>HOME</h3>
+      <h3>ENFERMEDADES</h3>
+      <h3>VACUNACIÓN</h3>
+      <h3>HOSPITALES</h3>
+      <h3>CONTACTo</h3>
+    </div>
+  </header>
+  <body>
+    <section id="filtroBox">
+      <input list="filtro" id="filtroEnfermedades" name="filtroEnf" placeholder="Filtrar por enfermedades...">
+      <datalist id="filtro">
+        <select>
+          <option value="Covid-19"></option>
+          <option value="Asma"></option>
+          <option value="Epilepsia"></option>
+          <option value="Zika"></option>
+        </select>
+      </datalist>
+    </section>
+    <div id="enfermedadCovid">
+      <h3>Covid-19</h3>
+      <p>Hola mundo!</p>
+      <input type="button" name="botonDetalles" id="botonDetalleCovid" value="Ver detalle">
+    </div>
+    <div id="Asmaenfermedad">
+      <h3>Asma</h3>
+      <p>Hello World!</p>
+      <input type="button" name="botonDetalles" id="botonDetalleAsma" value="Ver detalle">
+    </div>
+    <div id="Zikaenfermedad">
+      <h3>Zika</h3>
+      <p>Hello World!</p>
+      <input type="button" name="botonDetalles" id="botonDetalleZika" value="Ver detalle">
+    </div>
+    <div id="epilepsiaEnfermedad">
+      <h3>Epilepsia</h3>
+      <p>Hello World!</p>
+      <input type="button" name="botonDetalles" id="botonDetalleEpilepsia" value="Ver detalle">
+    </div>
+  </body>
 </html>
