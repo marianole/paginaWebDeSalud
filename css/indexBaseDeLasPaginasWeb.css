@@ -8,10 +8,9 @@ footer{
 header{
   display: flex;
   background-color: #78c8ff;
-    height: 100px;
-     color:white;
-    fon;
-     justify-content: space-around;
+  height: 100px;
+  color:white;
+  justify-content: space-around;
 }
 img{
   height: 90px;
