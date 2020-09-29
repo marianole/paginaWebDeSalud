@@ -13,7 +13,7 @@ header{
   color:white;
   justify-content: space-around;
 }
-img{
+#logoIconHeader{
   height: 90px;
   width: 90px;
 }
@@ -60,6 +60,7 @@ img{
   top: 60px;
   position: absolute;
   left: 403px;
+    display: flex;
 }
 .hijo2{
   padding: 0;
@@ -94,4 +95,17 @@ img{
 }
 a{
   color: yellow;
+}
+#vectorEpilepsia, #vectorCovid, #vectorAsma, #vectorZika{
+  width: 173px;
+  height: 173px;
+  border-radius: 100px
+}
+#parrafoBreveCovid19{
+  border-width: 200px;
+  position: absolute;
+  right: 384px;
+  left: 200px;
+  bottom: 200px;
+  top: 162px;
 }
