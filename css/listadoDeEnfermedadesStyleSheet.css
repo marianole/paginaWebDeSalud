@@ -1,14 +1,14 @@
 /*BASE DE LA PAGINA DE INICIO*/
 footer{
-  background-color: #78c8ff;
+  background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
   display: flex;
-
   justify-content: space-around;
 
 }
 header{
   display: flex;
-  background-color: #78c8ff;
+  /*background-color: #78c8ff;*/
+  background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
   height: 100px;
   color:white;
   justify-content: space-around;
@@ -23,7 +23,6 @@ img{
   height: 20px;
   width: 70px;
   display: flex;
-  justify-content: space-around;
 }
 
 #tituloDeLaPagina {
@@ -33,6 +32,7 @@ img{
   formato png*/
   display: flex;
   justify-content: center;
+  position: absolute;
 }
 #menú {
   padding: 0;
@@ -56,7 +56,42 @@ img{
 }
 #menú{
   justify-content: center;
+  right: 550px;
+  top: 60px;
+  position: absolute;
+  left: 403px;
 }
 .hijo2{
   padding: 0;
+  color: yellow;
+}
+
+#seachBoxToMove{
+  position: absolute;
+  right: 70px;
+  top:27px;
+  width: 750px;
+  height: 30px;
+}
+#logoIconHeader{
+  position: absolute;
+  left: 78px;
+  top: 14px;
+}
+
+#datosAlumnos{
+  color: white;
+  position: relative;
+  left: -189px;
+  top: 2px;
+}
+#menuInferior{
+  color: white;
+  position: relative;
+  right: 91px;
+  left: -376px;
+  top: 2px;
+}
+a{
+  color: yellow;
 }

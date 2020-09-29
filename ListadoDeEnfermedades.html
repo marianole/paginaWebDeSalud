@@ -7,8 +7,9 @@
 </head>
   <header>
     <!--acoplar con el diseño principal de la pagina de inicio-->
-    <img src="icono.jpg" alt="icono">
-    <input list="Buscador" name="datalist"  placeholder="Ingrese aquí para buscar...">
+    <!--Logo original: src="icono.jpg"-->
+    <img src="https://image.flaticon.com/icons/png/512/564/564276.png"  alt="icono" id="logoIconHeader">
+    <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
     <datalist id="Buscador"class="">
       <select class="" name="">
         <option value="coronavirus"></option>
@@ -38,29 +39,41 @@
         </select>
       </datalist>
     </section>
-    <div id="enfermedadCovid">
-      <h3>Covid-19</h3>
-      <p>Hola mundo!</p>
-      <input type="button" name="botonDetalles" id="botonDetalleCovid" value="Ver detalle">
-    </div>
-    <div id="Asmaenfermedad">
-      <h3>Asma</h3>
-      <p>Hello World!</p>
-      <input type="button" name="botonDetalles" id="botonDetalleAsma" value="Ver detalle">
-    </div>
-    <div id="Zikaenfermedad">
-      <h3>Zika</h3>
-      <p>Hello World!</p>
-      <input type="button" name="botonDetalles" id="botonDetalleZika" value="Ver detalle">
-    </div>
-    <div id="epilepsiaEnfermedad">
-      <h3>Epilepsia</h3>
-      <p>Hello World!</p>
-      <input type="button" name="botonDetalles" id="botonDetalleEpilepsia" value="Ver detalle">
-    </div>
+    <section id="bodyTextEnfermedades">
+      <div id="enfermedadCovid">
+        <h3>Covid-19</h3>
+        <p id="parrafoBreveCovid19">Las personas infectadas por COVID-19 muestran un amplio espectro de síntomas, que van desde una enfermedad leve
+          similar al resfriado o la gripe hasta una dificultad respiratoria grave e incluso la muerte.
+          Los síntomas típicos incluyen tos, fiebre, acortamiento de la respiración y dificultades para respirar.
+          Aunque son necesarias más determinaciones, los síntomas han aparecido en tan solo 2 días o hasta 14 días después
+          de la exposición al coronavirus. </p>
+        <input type="button" name="botonDetalles" id="botonDetalleCovid" value="Ver detalle">
+      </div>
+      <div id="Asmaenfermedad">
+        <h3>Asma</h3>
+        <p id="parrafoBreveAsma">El asma es una afección crónica o prolongada que inflama y estrecha de manera intermitente las vías
+          respiratorias en los pulmones. La inflamación hace que las vías respiratorias se hinchen. El asma causa períodos}
+          de respiración sibilante, opresión en el pecho, dificultad para respirar y tos</p>
+        <input type="button" name="botonDetalles" id="botonDetalleAsma" value="Ver detalle">
+      </div>
+      <div id="Zikaenfermedad">
+        <h3>Zika</h3>
+        <p id="parrafoBreveZika">La enfermedad por el virus de Zika es causada por un virus transmitido principalmente por mosquitos del género
+          Aedes, que pican durante el día. Los síntomas, generalmente leves y de 2 a 7 días de duración, consisten en
+          fiebre, erupciones cutáneas, conjuntivitis, dolores musculares y articulares, malestar y cefaleas</p>
+        <input type="button" name="botonDetalles" id="botonDetalleZika" value="Ver detalle">
+      </div>
+      <div id="epilepsiaEnfermedad">
+        <h3>Epilepsia</h3>
+        <p id="parrafoBreveEpilepsia">La epilepsia es un trastorno cerebral en el cual una persona tiene convulsiones repetidas durante un tiempo.
+          Las convulsiones son episodios de actividad descontrolada y anormal de las neuronas que puede causar cambios en
+          la atención o el comportamiento.</p>
+        <input type="button" name="botonDetalles" id="botonDetalleEpilepsia" value="Ver detalle">
+      </div>
+    </section>
   </body>
   <footer>
-    <div class="">
+    <div id="datosAlumnos">
       <ul class="hijo1"> <!--- ¿por que la clase se llama "hijo1"? -->
         <h4>Datos Del Grupo:</h4>
         <p>Integrante Uno- DNI
@@ -71,7 +84,7 @@
         </p>
       </ul>
     </div>
-    <div class="">
+    <div id="menuInferior">
       <h4>Menú inferior</h4>
       <ul class="hijo2"> <!--- ¿por que la clase se llama "hijo2"? -->
         <li><a href="index.html">Inicio</a></li>
