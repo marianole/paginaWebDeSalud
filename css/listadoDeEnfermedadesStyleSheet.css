@@ -109,3 +109,15 @@ a{
   bottom: 200px;
   top: 162px;
 }
+#botonDetalleAsma, #botonDetalleCovid, #botonDetalleEpilepsia, #botonDetalleZika{
+  color: white;
+  background: #2175bc;
+  border-color: #2586d7;
+  font-family: "Bebas Neue";
+  width: 81px;
+  height: 30px;
+  animation-play-state: running;
+  position: absolute;
+  top: 311px;
+  left: 199px;
+}
