@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Lista de Enfermedades</title>
+  <link rel="stylesheet" href="css/listadoDeEnfermedadesStyleSheet.css">
 </head>
   <header>
     <!--acoplar con el diseño principal de la pagina de inicio-->
@@ -16,13 +17,15 @@
 
     </datalist>
     <div id="menú">
-      <h3>HOME</h3>
-      <h3>ENFERMEDADES</h3>
-      <h3>VACUNACIÓN</h3>
-      <h3>HOSPITALES</h3>
-      <h3>CONTACTo</h3>
+      <ul id=”button”>
+        <li><a href=index.html>Inicio</a></li>
+        <li><a href=”#”>Enfermedades</a></li>
+        <li><a href=”#”>Vacunas</a></li>
+        <li><a href=”#”>Hospitales</a></li>
+        <li><a href=”#”>Contacto</a></li>
+      </ul>
     </div>
-  </header>
+  </header> <!-- está desactualizado -->
   <body>
     <section id="filtroBox">
       <input list="filtro" id="filtroEnfermedades" name="filtroEnf" placeholder="Filtrar por enfermedades...">
@@ -69,13 +72,13 @@
       </ul>
     </div>
     <div class="">
-      <ul class="hijo2"> <|--- ¿por que la clase se llama "hijo2"? -->
-        <h4>Menú inferior</h4>
-        <li>Enfermedades</li>
-        <li>Vacunas</li>
-        <li>Hospitales</li>
-        <li>Contacto</li>
+      <h4>Menú inferior</h4>
+      <ul class="hijo2"> <!--- ¿por que la clase se llama "hijo2"? -->
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#" >Vacunas</a></li>
+        <li><a href="#">Hospitales</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
     </div>
-  </footer> <!-- faltan las redes sociales, se pueden poner las de UNLAM -->
+  </footer> <!-- faltan las redes sociales, se pueden poner las de UNLAM  y actualizar con los nuevos cambios-->
 </html>
