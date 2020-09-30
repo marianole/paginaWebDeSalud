@@ -12,6 +12,8 @@ header{
   height: 100px;
   color:white;
   justify-content: space-around;
+  border-style: revert;
+  padding: 4px;
 }
 #logoIconHeader{
   height: 90px;
@@ -46,8 +48,10 @@ header{
   text-decoration: none;
   float: left;
   padding: 10px;
+  display: flex;
   background-color: #2175bc;
   color: #fff;
+  justify-content:space-around;
 }
 #menú li a:hover {
   background-color: #2586d7;
@@ -168,4 +172,9 @@ a{
   font-family: "Bebas Neue";
   color: black;
   size: 200px;
+}
+#bodyTextEnfermedades{
+  border-style: solid;
+  border-color: black;
+  padding: 4px;
 }
