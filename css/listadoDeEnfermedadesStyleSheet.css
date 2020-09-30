@@ -107,9 +107,9 @@ a{
   right: 384px;
   left: 200px;
   bottom: 200px;
-  top: 162px;
+  top: 26px;
 }
-#botonDetalleAsma, #botonDetalleCovid, #botonDetalleEpilepsia, #botonDetalleZika{
+#botonDetalleAsma{
   color: white;
   background: #2175bc;
   border-color: #2586d7;
@@ -118,6 +118,54 @@ a{
   height: 30px;
   animation-play-state: running;
   position: absolute;
-  top: 311px;
+  top: 364px;
   left: 199px;
+}
+#botonDetalleCovid, #botonDetalleEpilepsia, #botonDetalleZika{
+  color: white;
+  background: #2175bc;
+  border-color: #2586d7;
+  font-family: "Bebas Neue";
+  width: 81px;
+  height: 30px;
+  animation-play-state: running;
+  position: absolute;
+  top: 158px;
+  left: 199px;
+}
+#titleCovid{
+  position: absolute;
+  top: -6px;
+  left: 199px;
+  font-family: "Bebas Neue";
+  color: black;
+}
+#filtroEnfermedades{
+  height: 40px;
+  width: 860px;
+  top: 19px;
+  position: relative;
+  left: 94px
+}
+#bodyTextEnfermedades{
+  position: relative ;
+  top: 40px;
+}
+#vectorAsma{
+  position: absolute;
+  top: 214px;
+}
+#parrafoBreveAsma{
+  position: absolute;
+  left: 199px;
+  right: 344px;
+  bottom: 390px;
+}
+#titleAsma{
+  position: absolute;
+  top: 205px;
+  left: 197px;
+  font-family: "Bebas Neue";
+  color: black;
+  size: 200px;
 }
