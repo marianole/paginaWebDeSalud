@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css\DetalleDeLaEnfermedad.css">
+    <link rel="stylesheet" href="css\indexBaseDeLasPaginasWeb.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<head>
+<header>
+
+  <img src="img\images.png" alt="icono">
+  <div id="searchBoxConfig">
+  <input list="Buscador" name="datalist"  placeholder="Ingrese aquí para buscar..." >
+    <datalist id="Buscador"class="">
+      <select class="" name="" id="valoresSearchBox_HOME">
+            <option value="coronavirus"></option>
+            <option value="cancer"></option>
+      </select>
+     </datalist>
+  </div>
+
+</header>
+
+<main>
+
+ <h1>Covid-19</h1>
+
+<section>
+<article class="primero">
+
+<div class="ImagenConDescripcion">
+         <img src="img\imagenDescriptiva.jpg" alt="coronavirus">
+       <p>La COVID-19nota 2 (Acerca de este sonido pronunciación (?·i); acrónimo del inglés coronavirus disease 2019),4 también conocida como enfermedad por coronavirus e incorrectamente como neumonía por coronavirus,nota 1 es una enfermedad infecciosa causada por el virus SARS-CoV-2.910
+          Produce síntomas similares a los de la gripe o catarro, entre los que se incluyen fiebre, tos ,11 disnea, mialgia y fatiga.1213 En casos graves se caracteriza por producir neumonía, síndrome de dificultad respiratoria aguda,14 sepsis15 y choque séptico que conduce a cerca de 3,75 % de los infectados a la muerte según la OMS.16 No existe tratamiento específico; las medidas terapéuticas principales consisten en aliviar los síntomas y mantener las funciones vitales.12
+       </p>
+
+</div>
+
+<h2>Formulario de test del coronavirus</h2>
+
+<div class="sintomasYformulario">
+<img class="sintomas"src="img\sintomasDelCoronavirus.png" alt="">
+<form class="deteccion" action="https://www.youtube.com/" method="post">
+     <label for="NombreYapellido">*Nombre y Apellido</label>
+          <input type="text" id="NombreYapellido"name="NombreYapellido" placeholder="Ingrese nombre y apellido" required maxlength="50">
+     <label for="documento">*DNI</label>
+          <input type="number" id="documento"name="documento" placeholder="00.000.000" required maxlength="8">
+     <label for="telefono">*Telefono celular</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="011 23185649" >
+     <label for="ciudad" >*Ciudad</label>
+          <input type="text" id="ciudad"name="ciudad" required placeholder="buenos aires">
+      <label for="sexo">*sexo:</label>
+        H<input type="radio" name="sexo">
+        M<input type="radio" name="sexo">
+      <label for="viajes">¿Ha viajado por la republica argentina?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
+        Si<input type="radio" name="viajes">
+        No<input type="radio" name="viajes">
+<h3>Sintomas presentados</h3>
+      <label for="fiebre">¿Tuviste Fiebre mayor a 38 grados?</label>
+        Si<input type="radio" name="fiebre">
+        No<input type="radio" name="fiebre">
+      <label for="DolorDeCabeza">¿Tuviste dolor de cabeza?</label>
+        Si<input type="radio" name="DolorDeCabeza">
+        No<input type="radio" name="DolorDeCabeza">
+      <label for="tos">¿Tuviste una tos persistente?</label>
+        Si<input type="radio" name="tos">
+        No<input type="radio" name="tos">
+      <label for="dolorDeGarganta">¿Tuviste dolor de garganta?</label>
+        Si<input type="radio" name="dolorDeGarganta">
+        No<input type="radio" name="dolorDeGarganta">
+      <label for="respirar">¿Tuviste deficultades para respirar?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
+        Si<input type="radio" name="respirar">
+        No<input type="radio" name="respirar">
+       <label for=""></label>
+          <input type="reset"  name="reset">
+        <input type="submit" name="submit">
+
+</form>
+</div>
+
+
+</article>
+</section>
+
+<div class="">
+
+  <article class="prevenciones">
+
+    <img src="img\prevencionContraElCoronavirus.png" alt="">
+
+  </article>
+
+  <aside class="mapa">
+ <!-- en esta parte seria le mapa  -->
+  </aside>
+
+</div>
+
+
+
+
+
+
+
+</main>
+ 
+</head>
+  </body>
+</html>
