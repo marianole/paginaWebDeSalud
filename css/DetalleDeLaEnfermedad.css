@@ -3,7 +3,7 @@ h1,h2{
   margin:60px 0px;
   text-align: center;
 }
-header{margin: 0px auto;}
+
 
 .ImagenConDescripcion{
 display: flex;
@@ -38,7 +38,7 @@ display: flex;
 }
 form{
   border-style: solid;
-  border-color: blue;
+  border-color: #78c8ff;
   padding: 10px;
 }
 input{
@@ -54,3 +54,26 @@ margin-bottom: 10px;
   display: inline;
   margin-bottom: 10px;
 }
+
+
+/* probando inicion */
+header{
+  display: flex;
+  background-color: #78c8ff;
+  justify-content: space-around;
+  align-items:center;
+}
+header img{
+  height: 110px;
+  width: 100px;
+
+}
+
+header input{
+   background-color: white;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 0px;
+    border-style: solid;
+    border-radius: 10px;
+ }
