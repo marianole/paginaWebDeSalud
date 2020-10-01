@@ -1,0 +1,14 @@
+.menu{
+  display:flex;
+  justify-content:space-around;
+  height: 30px;
+  background-color: black;
+  align-items: center;
+}
+div a{
+  color: white;
+
+  border-style: solid;
+  background-color: black;
+    text-decoration: none;
+}
