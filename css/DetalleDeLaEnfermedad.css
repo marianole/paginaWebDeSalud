@@ -3,20 +3,38 @@ h1,h2{
   margin:60px 0px;
   text-align: center;
 }
+header{margin: 0px auto;}
+
 .ImagenConDescripcion{
 display: flex;
 }
-div img{
-  margin-right: 40px;
+/* div img{
+  margin-right: 10px;
+  height: 700px;
+  width: 500px
+} */
+
+.sintomasImg{
+  margin-right: 10px;
+  height: 700px;
+  width: 500px
+}
+.descripcionImg{
+  margin-right: 10px;
+  height: 500px;
+  width: 500px
+}
+.prevencionesImg{
+  margin-right: 10px;
   height: 700px;
   width: 500px
 }
 
+
 .sintomasYformulario{
   display: flex;
   justify-content: space-around;
-
-  height: 910px;
+  height: 650px;
 }
 form{
   border-style: solid;
@@ -25,6 +43,14 @@ form{
 }
 input{
 display: block;
-margin-bottom: 5px;
+margin-bottom: 10px;
 
+}
+.pregunta{
+  display: block;
+
+}
+.radio{
+  display: inline;
+  margin-bottom: 10px;
 }
