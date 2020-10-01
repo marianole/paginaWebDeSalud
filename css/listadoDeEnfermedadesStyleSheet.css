@@ -3,7 +3,8 @@ footer{
   background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
   display: flex;
   justify-content: space-around;
-  bottom: -208px;
+  bottom: -61px;
+  position: relative;
 }
 header{
   display: flex;
@@ -19,7 +20,6 @@ header{
   height: 90px;
   width: 90px;
 }
-
 
 #searchBoxConfig{
   height: 20px;
@@ -96,11 +96,13 @@ header{
   right: 91px;
   left: -376px;
   top: 2px;
+  text-decoration: none;
 }
 a{
   color: yellow;
+  text-decoration: none;
 }
-#vectorEpilepsia, #vectorCovid, #vectorAsma, #vectorZika{
+#vectorCovid, #vectorAsma, #vectorZika{
   width: 173px;
   height: 173px;
   border-radius: 100px
@@ -154,6 +156,7 @@ a{
 #bodyTextEnfermedades{
   position: relative ;
   top: 40px;
+
 }
 #vectorAsma{
   position: absolute;
@@ -163,7 +166,7 @@ a{
   position: absolute;
   left: 199px;
   right: 344px;
-  bottom: 390px;
+  bottom: 250px;
 }
 #titleAsma{
   position: absolute;
@@ -176,7 +179,12 @@ a{
 #bodyTextEnfermedades{
   border-style: wave;
   border-color: black;
-  padding: 4px;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 30px;
+  padding-bottom: 44px;
+  position: center;
+  justify-content: space-around;
 }
 #parrafoBreveZika{
   position: absolute;
