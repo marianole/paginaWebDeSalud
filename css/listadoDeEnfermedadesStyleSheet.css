@@ -3,7 +3,7 @@ footer{
   background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
   display: flex;
   justify-content: space-around;
-
+  bottom: -208px;
 }
 header{
   display: flex;
@@ -125,7 +125,7 @@ a{
   top: 364px;
   left: 199px;
 }
-#botonDetalleCovid, #botonDetalleEpilepsia, #botonDetalleZika{
+#botonDetalleCovid, #botonDetalleEpilepsia{
   color: white;
   background: #2175bc;
   border-color: #2586d7;
@@ -174,7 +174,31 @@ a{
   size: 200px;
 }
 #bodyTextEnfermedades{
-  border-style: solid;
+  border-style: wave;
   border-color: black;
   padding: 4px;
+}
+#parrafoBreveZika{
+  position: absolute;
+  left: 199px;
+  right: 344px;
+  bottom: 141px;
+}
+#titleZika{
+  left:197px;
+  position: relative;
+  bottom: -57px;
+  font-family: "Bebas Neue";
+}
+#botonDetalleZika{
+  color: white;
+  background: #2175bc;
+  border-color: #2586d7;
+  font-family: "Bebas Neue";
+  width: 81px;
+  height: 30px;
+  animation-play-state: running;
+  position: absolute;
+  bottom: 113px;
+  left: 199px;
 }
