@@ -1,19 +1,30 @@
 /*margen para todo el maine.El marge y footer se colocan siempre fuera del main */
 main{
   margin: 100px;
+  justify-content: space-around;
 }
+
+
 /* Covid-19 */
-#titleCovid{/* al titulo lo saque del div porque no me queria morir programando */
-  padding-left: 35px;
+#titleCovid {/* al titulo lo saque del div porque no me queria morir programando */
+  text-align: center;
+  font-family: "Bebas Neue";
 }
 #enfermedadCovid{/* use grid para porque el boton no se queria acomodar  */
   display: grid;
   grid-template-columns: 150px 600px;
   padding-bottom: 30px;
+  justify-content: center;
 }
 .bottonCovid{
-  padding-left: 35px;
+  padding-left: 151px;
   display: block;
+}
+#botonDetalleCovid{
+  background-color: #2586d7;
+  font-family: "Bebas Neue";
+  color: white;
+  box-shadow: none;
 }
 .covidImg{
   height: 150px;
@@ -23,17 +34,86 @@ main{
 
 /* Asma */
 #titleAsma{/* al titulo lo saque del div porque no me queria morir programando */
-  padding-left: 35px;
+  text-align: center;
+  font-family: "Bebas Neue";
 }
 #Asmaenfermedad{/* use grid para porque el boton no se queria acomodar  */
   display: grid;
   grid-template-columns: 150px 600px;
+  justify-content: center;
 }
 .botonDetalleAsma{
-  padding-left: 35px;
+  padding-left: 151px;
+  padding-bottom: 42px;
   display: block;
+}
+#botonDetalleAsma{
+  background-color: #2586d7;
+  font-family: "Bebas Neue";
+  color: white;
+  box-shadow: none;
 }
 #vectorAsma{
   height: 150px;
   width: 150px;
+}
+
+/* Zika */
+#titleZika{
+  text-align: center;
+  padding-bottom: 5px;
+  font-family: "Bebas Neue";
+}
+#Zikaenfermedad{
+  display: grid;
+  grid-template-columns: 150px 600px;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+.botonDetalleZika {
+  padding-left: 151px;
+  display: block;
+}
+#botonDetalleZika{
+  background-color: #2586d7;
+  font-family: "Bebas Neue";
+  color: white;
+  box-shadow: none;
+}
+#vectorZika{
+  height: 150px;
+  width: 150px;
+}
+
+
+/*HEADER*/
+
+#seachBoxToMove{
+  position: relative;
+  /* right: 70px; */
+  top: 27px;
+  width: 624px;
+  height: 30px;
+  display: block;
+  -webkit-box-flex: initial;
+  /* justify-items: center; */
+  align-self: flex-start;
+}
+#logoIconHeader{
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 96px;
+  height: 96px;
+  display: block;
+}
+header{
+  display: flex;
+  /*background-color: #78c8ff;*/
+  background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
+  height: 100px;
+  color:white;
+  justify-content: space-around;
+  border-style: revert;
+  padding: 4px;
 }
