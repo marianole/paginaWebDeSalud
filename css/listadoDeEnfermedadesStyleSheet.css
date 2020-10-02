@@ -1,29 +1,30 @@
 /*BASE DE LA PAGINA DE INICIO*/
 footer{
-  background-color: #78c8ff;
+  background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
   display: flex;
-
   justify-content: space-around;
-
+  bottom: -61px;
+  position: relative;
 }
 header{
   display: flex;
-  background-color: #78c8ff;
+  /*background-color: #78c8ff;*/
+  background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
   height: 100px;
   color:white;
   justify-content: space-around;
+  border-style: revert;
+  padding: 4px;
 }
-img{
+#logoIconHeader{
   height: 90px;
   width: 90px;
 }
-
 
 #searchBoxConfig{
   height: 20px;
   width: 70px;
   display: flex;
-  justify-content: space-around;
 }
 
 #tituloDeLaPagina {
@@ -33,6 +34,7 @@ img{
   formato png*/
   display: flex;
   justify-content: center;
+  position: absolute;
 }
 #menú {
   padding: 0;
@@ -46,8 +48,10 @@ img{
   text-decoration: none;
   float: left;
   padding: 10px;
+  display: flex;
   background-color: #2175bc;
   color: #fff;
+  justify-content:space-around;
 }
 #menú li a:hover {
   background-color: #2586d7;
@@ -56,7 +60,153 @@ img{
 }
 #menú{
   justify-content: center;
+  right: 550px;
+  top: 60px;
+  position: absolute;
+  left: 403px;
+    display: flex;
 }
 .hijo2{
   padding: 0;
+  color: yellow;
+}
+
+#seachBoxToMove{
+  position: absolute;
+  right: 70px;
+  top:27px;
+  width: 750px;
+  height: 30px;
+}
+#logoIconHeader{
+  position: absolute;
+  left: 78px;
+  top: 14px;
+}
+
+#datosAlumnos{
+  color: white;
+  position: relative;
+  left: -189px;
+  top: 2px;
+}
+#menuInferior{
+  color: white;
+  position: relative;
+  right: 91px;
+  left: -376px;
+  top: 2px;
+  text-decoration: none;
+}
+a{
+  color: yellow;
+  text-decoration: none;
+}
+#vectorCovid, #vectorAsma, #vectorZika{
+  width: 173px;
+  height: 173px;
+  border-radius: 100px
+}
+#parrafoBreveCovid19{
+  border-width: 200px;
+  position: absolute;
+  right: 384px;
+  left: 200px;
+  bottom: 200px;
+  top: 26px;
+}
+#botonDetalleAsma{
+  color: white;
+  background: #2175bc;
+  border-color: #2586d7;
+  font-family: "Bebas Neue";
+  width: 81px;
+  height: 30px;
+  animation-play-state: running;
+  position: absolute;
+  top: 364px;
+  left: 199px;
+}
+#botonDetalleCovid, #botonDetalleEpilepsia{
+  color: white;
+  background: #2175bc;
+  border-color: #2586d7;
+  font-family: "Bebas Neue";
+  width: 81px;
+  height: 30px;
+  animation-play-state: running;
+  position: absolute;
+  top: 158px;
+  left: 199px;
+}
+#titleCovid{
+  position: absolute;
+  top: -6px;
+  left: 199px;
+  font-family: "Bebas Neue";
+  color: black;
+}
+#filtroEnfermedades{
+  height: 40px;
+  width: 860px;
+  top: 19px;
+  position: relative;
+  left: 94px
+}
+#bodyTextEnfermedades{
+  position: relative ;
+  top: 40px;
+
+}
+#vectorAsma{
+  position: absolute;
+  top: 214px;
+}
+#parrafoBreveAsma{
+  position: absolute;
+  left: 199px;
+  right: 344px;
+  bottom: 250px;
+}
+#titleAsma{
+  position: absolute;
+  top: 205px;
+  left: 197px;
+  font-family: "Bebas Neue";
+  color: black;
+  size: 200px;
+}
+#bodyTextEnfermedades{
+  border-style: wave;
+  border-color: black;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 30px;
+  padding-bottom: 44px;
+  position: center;
+  justify-content: space-around;
+}
+#parrafoBreveZika{
+  position: absolute;
+  left: 199px;
+  right: 344px;
+  bottom: 141px;
+}
+#titleZika{
+  left:197px;
+  position: relative;
+  bottom: -57px;
+  font-family: "Bebas Neue";
+}
+#botonDetalleZika{
+  color: white;
+  background: #2175bc;
+  border-color: #2586d7;
+  font-family: "Bebas Neue";
+  width: 81px;
+  height: 30px;
+  animation-play-state: running;
+  position: absolute;
+  bottom: 113px;
+  left: 199px;
 }
