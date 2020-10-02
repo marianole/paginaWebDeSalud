@@ -1,0 +1,39 @@
+/*margen para todo el maine.El marge y footer se colocan siempre fuera del main */
+main{
+  margin: 100px;
+}
+/* Covid-19 */
+#titleCovid{/* al titulo lo saque del div porque no me queria morir programando */
+  padding-left: 35px;
+}
+#enfermedadCovid{/* use grid para porque el boton no se queria acomodar  */
+  display: grid;
+  grid-template-columns: 150px 600px;
+  padding-bottom: 30px;
+}
+.bottonCovid{
+  padding-left: 35px;
+  display: block;
+}
+.covidImg{
+  height: 150px;
+  width: 150px;
+}
+
+
+/* Asma */
+#titleAsma{/* al titulo lo saque del div porque no me queria morir programando */
+  padding-left: 35px;
+}
+#Asmaenfermedad{/* use grid para porque el boton no se queria acomodar  */
+  display: grid;
+  grid-template-columns: 150px 600px;
+}
+.botonDetalleAsma{
+  padding-left: 35px;
+  display: block;
+}
+#vectorAsma{
+  height: 150px;
+  width: 150px;
+}
