@@ -1,13 +1,14 @@
 footer{
   background-color: #78c8ff;
   display: flex;
-
+  border:2px slategray solid;
   justify-content: space-around;
 
 }
 header{
   display: flex;
   background-color: #78c8ff;
+  border:2px slategray solid;
   height: 100px;
   color:white;
   justify-content: space-around;

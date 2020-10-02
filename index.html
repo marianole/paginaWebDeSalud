@@ -3,48 +3,96 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/indexBaseDeLasPaginasWeb.css"> <!-- "css/" para que detecte la carpeta" -->
+    <link rel="stylesheet" type="text/css" href="C:\Users\Cfern\OneDrive\Escritorio\edaunopw\pw-eva-01\css\EstiloDePaginaPrincipal.css">
+
     <title>Inicio</title> <!--- El archivo tiene que llamarse index.htlm pero en el titulo tiene que aparecer Inico-->
 </head>
 
   <header>
-    <img src="icono.jpg" alt="icono">
-    <h1 id="tituloDeLaPagina">PREVENCIONES</h1>
-    <div id="searchBoxConfig">
-    <input list="Buscador" name="datalist"  placeholder="Ingrese aquí para buscar..." >
-      <datalist id="Buscador"class="">
-        <select class="" name="" id="valoresSearchBox_HOME">
-              <option value="coronavirus"></option>
-              <option value="cancer"></option>
-        </select>
-       </datalist>
-    </div>
+    <section class="ContenedorHeader">
+      <!-- header section -->
+      <img src="img\icono.png" alt="icono" class="elemento elemento0" >
+      <label for="searchBox">
+      <a id="a"> <img src="img\search.png" id="searchIcon" class="elemento elemento1">
+      </a>
+      </label>
+      <input type="search" class="elemento elemento2" id="searchBox" name="sBox" placeholder="Ingrese aquí para buscar" >
+      </section>
+
+
   </header> <!-- Cambiar la lista de la datalist porque está mal, no coincide con la lista de enfermedades que elegí.-->
-  <body>
-    <!--Aca va todo lo que se indica en el pdf-->
-  <br>
-  <br>
+  <body> 
+
+    <section class="carrousel"> <!-- esta seccion define el carrousel-->
+    <img src="img\atras.png" class="carrouselAtras">
+    <img src="img\adelante.png" class="carrouselAdelante">
+    </section>   
+  
+    <section> <!--esta seccion es para el titulo-->
+      <div class="titulo">
+      <h1 class="titulouno">
+        Centro de prevenciones de enfermedades <br>Ciudad De Buenos Aires
+      </h1>
+    </div>
+      </section>
+
+      <main>
+        <section class="columna"> <!--seccion de columna de enfermedad , inyecciones, hospitales-->
+          <div>
+          <img src="img\coronavirus.png" alt="enfermedad" class="columna enfermedad">
+          <p class="palabras"> Enfermedades </p> 
+          </div>
+          <div>
+          <img src ="img\inyeccion.png" alt="inyeccion" class="columna inyeccion">
+          <p class="palabras"> Vacunas </p>
+          </div>
+          <div>
+            <img src ="img\hospital.png" alt="hospital" class="columna hospital">
+            <p class="palabras"> Hospitales </p>
+            </div>
+        </section>
+
+        <section>
+          <div class="llama" >
+            <p class="uno">Si tenes sintomas de COVID-19 <br> <span class="dos">LLAMA AL</span></p>
+            <img src="img\telefono.png" class="tres"> 
+            <P class="cuatro">148</P>
+
+          </div> 
+
+        </section>
+        
+      </main>
+
+   
   </body>
 
   <footer class="pieDePagina">
-    <div class="">
-      <ul class="hijo1"> <!--- ¿por que la clase se llama "hijo1"? -->
-        <h4>Datos Del Grupo:</h4>
-        <p>Integrante Uno- DNI
-          <br>
-          Integrante Dos- DNI
-          <br>
-          Integrante Tres- DNI
-        </p>
+    <div>
+      <ul class="integrantes"> <!--- ¿por que la clase se llama "hijo1"? -->
+        <h4 class="titulospiedepagina">Datos Del Grupo:</h4>
+          <li>Ledesma Mariano - DNI : 43.180.856</li>
+          <li>Cristian Gabriel Quipildor - DNI : 41.623.360 </li>
+          <li>Fernandez Melian Cristian - DNI : 41.139.455</li>
       </ul>
     </div>
-    <div class="">
-        <h4>Menú inferior</h4>
-        <ul class="hijo2"> <!--- ¿por que la clase se llama "hijo2"? -->
+    <div>
+
+      <ul class="menu"> <!--- ¿por que la clase se llama "hijo2"? -->
+        <h4 class="titulospiedepagina">Menú inferior</h4>
           <li><a href="ListadoDeEnfermedades.html">Enfermedades</a></li>
           <li><a href="#" >Vacunas</a></li>
           <li><a href="#">Hospitales</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
+    </div>
+
+    <div class="redessociales">
+      <h4 class="titulospiedepagina">Redes Sociales</h4>
+      <a href="https://www.unlam.edu.ar/" target="_blank"><img src="img/unlam.png" class="sub"></a>
+      <a href="https://www.facebook.com/GCBA/" target="_blank"><img src="img/facebook.png"  class="sub"></a>
+      <a href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank"><img src="img/instagram.png"  class="sub"></a>
+
     </div>
   </footer> <!-- faltan las redes sociales, se pueden poner las de UNLAM -->
 </html>

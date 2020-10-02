@@ -1,0 +1,211 @@
+/*este es el css de la pagina de inicio*/
+
+*{
+    height: auto;
+    width: auto;
+    
+}
+.ContenedorHeader{
+
+    height: auto;
+    width: auto;
+    
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    flex-direction: row;
+    align-items:center; 
+}
+
+
+.elemento1{
+    height: 45px;
+    width: 45px;
+
+}
+
+.elemento2{
+    height: 50px;
+    width: 600px;
+    /*margin: auto;*/
+}
+
+.elemento0{
+    height: 60px;
+    width: 60px;
+    padding-right: 400px;
+
+    
+}
+
+
+.carrousel{
+     
+    background: url(../img/personal.jpg);
+    
+    width: 100%;
+    height: 550px;
+    background-size: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+
+  
+}
+
+
+.carrouselAtras{
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+    
+
+}
+.carrouselAdelante{
+    height: 100px;
+    width: 100px;
+    margin-right: 50px;
+}
+
+.titulo{
+background-color:lavender;
+height: 100px;
+display:flex;
+justify-content: center;
+border-top:#808080 3px solid ;
+
+
+}
+
+.titulouno{
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+
+
+}
+
+.columna{
+    background-color:lavender ;
+    height: 400px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    
+}
+.enfermedad{
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.inyeccion{
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.hospital{
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.palabras{
+    text-align: center;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgb(98, 146, 165);
+    -webkit-border-radius: 25px 25px 30px 25px;
+}
+
+
+.llama{
+    height: 400px;
+    background-color: rgb(165, 189, 188);
+    align-items: flex-end;
+    flex-direction: row;
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    margin-bottom: 20px;
+}
+.llama1{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.uno{
+font-size: 35px;
+top: 30px;
+
+}
+
+.dos{
+    font-size: 100px;
+}
+
+.tres{
+    height: 300px;
+    width: 300px;
+}
+
+.cuatro{
+    font-size: 250px;
+}
+
+.pieDePagina{
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    flex-direction: row;
+
+    align-items: baseline;
+    justify-content: space-around;
+    background-color: #78c8ff;
+
+}
+
+.integrantes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #78c8ff;
+}
+
+.titulospiedepagina{
+    font-size: 20px;
+    background-color: rgb(98, 146, 165);
+    -webkit-border-radius: 25px 25px 30px 25px;
+    text-align: center;
+
+
+}
+
+a {
+    color:black;
+}
+
+.menu{
+    background-color: #78c8ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.redessociales{
+    background-color:  #78c8ff;
+    text-align: center;
+}
+
+.sub{
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+}
