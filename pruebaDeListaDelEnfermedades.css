@@ -2,6 +2,7 @@
 main{
   margin: 100px;
   justify-content: space-around;
+  font-family: 'Muli', sans-serif;
 }
 
 
@@ -116,4 +117,66 @@ header{
   justify-content: space-around;
   border-style: revert;
   padding: 4px;
+}
+
+
+
+/*FOOTER*/
+.pieDePagina{
+  display:flex;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  flex-direction: row;
+
+  align-items: baseline;
+  justify-content: space-around;
+  background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
+}
+
+.sub{
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+}
+.integrantes{
+  color: white;
+}
+.menu{
+  color: white;
+}
+.liMenuInf{
+ color: white;
+  text-decoration: none;
+}
+
+
+
+/*HEADER MENU*/
+
+#menuSuperiorID{
+  padding: 0;
+}
+
+#menuSuperiorID li{
+  display: inline;
+}
+#menuSuperiorID li a {
+  text-decoration: none;
+  color: white;
+  float: left;
+  padding: 10px;
+  font-family: 'Muli', sans-serif;
+  background-color: #2586d7;
+  justify-items: center;
+  display: block;
+}
+
+#menuSuperiorID li a:hover{
+  background-color: #cde0ef;
+  margin-top: -2px;
+}
+
+/*BODY AJUSTES NO IMPORTANTES*/
+#vectorZika, #vectorAsma, #vectorCovid{
+  border-radius: 100px;
 }
