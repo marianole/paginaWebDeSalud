@@ -108,6 +108,7 @@ main{
   height: 96px;
   display: block;
 }
+
 header{
   display: flex;
   /*background-color: #78c8ff;*/
@@ -134,20 +135,31 @@ header{
 }
 
 .sub{
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 100px;
+}
+.sub:hover{
+  width: 60px;
+  height: 60px;
+}
+.titulospiedepagina{
+  color: white;
+  font-family: 'Muli', sans-serif;
 }
 .integrantes{
   color: white;
+  font-family: 'Muli', sans-serif;
 }
 .menu{
   color: white;
 }
 .liMenuInf{
- color: white;
+  color: white;
   text-decoration: none;
+  font-family: 'Muli', sans-serif;
 }
+
 
 
 
@@ -179,4 +191,12 @@ header{
 /*BODY AJUSTES NO IMPORTANTES*/
 #vectorZika, #vectorAsma, #vectorCovid{
   border-radius: 100px;
+}
+/*BODY-- BARRA DE FILTROS*/
+#boxFiltro{
+  display: grid;
+  grid-template-columns: 900px;
+  justify-content: center;
+  padding-bottom: 20px;
+  height: 40px;
 }
