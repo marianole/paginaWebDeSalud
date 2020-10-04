@@ -72,7 +72,7 @@ header{
 }
 
 #seachBoxToMove{
-  position: absolute;
+  position: relative;
   right: 70px;
   top:27px;
   width: 750px;
