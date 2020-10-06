@@ -1,4 +1,4 @@
-main{margin: 100px;}
+main{margin: 75px;}
 h1,h2{
   margin:100px 0px;
   background-color: #78c8ff;
@@ -15,12 +15,15 @@ align-items: center;
   height: 700px;
   width: 500px
 } */
-
+ .parrafoSobreImg{
+   height: 150px;
+   width: 500px;
+ }
 .sintomasImg{
   margin-right: 10px;
-  height: 700px;
+  height: 500px;
   width: 500px;
-  border-radius: 300px;
+  border-radius: 200px;
 }
 .descripcionImg{
   border-radius: 50%;
@@ -37,7 +40,7 @@ align-items: center;
 .sintomasYformulario{
   display: flex;
   justify-content: space-around;
-  height: 650px;
+  align-items: center;
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
