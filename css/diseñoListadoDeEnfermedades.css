@@ -112,8 +112,10 @@ main{
 header{
   display: flex;
   /*background-color: #78c8ff;*/
-  background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
+  /*background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");*/
+  background-image: url("../img/celeste1.jpg");
   height: 100px;
+  background-size: contain;
   color:white;
   justify-content: space-around;
   border-style: revert;
@@ -131,7 +133,9 @@ header{
 
   align-items: baseline;
   justify-content: space-around;
-  background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
+  /*background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");*/
+  background-image: url("../img/celeste1.jpg");
+  background-size: contain;
 }
 
 .sub{
@@ -144,18 +148,18 @@ header{
   height: 60px;
 }
 .titulospiedepagina{
-  color: white;
+  color: #111111;
   font-family: 'Muli', sans-serif;
 }
 .integrantes{
-  color: white;
+  color: #000000;
   font-family: 'Muli', sans-serif;
 }
 .menu{
-  color: white;
+  color: #000000;
 }
 .liMenuInf{
-  color: white;
+  color: #000000;
   text-decoration: none;
   font-family: 'Muli', sans-serif;
 }
