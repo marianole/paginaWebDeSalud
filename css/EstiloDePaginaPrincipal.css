@@ -3,18 +3,23 @@
 *{
     height: auto;
     width: auto;
+    margin: auto;
 }
 header{
+    height: 100px;
+    width: 100%;
+    position:fixed;
+    
     background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
 
 }
 
 footer{
+    height: 125px;
     background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
-
+    border-bottom: lightblue 5px solid;
 }
 .ContenedorHeader{
-    
     height: auto;
     width: auto;
     
@@ -36,7 +41,6 @@ footer{
 .elemento2{
     height: 50px;
     width: 600px;
-    /*margin: auto;*/
 }
 
 .elemento0{
@@ -65,12 +69,19 @@ footer{
   
 }
 
+.carrouselAtras:hover{
+    -webkit-transform: scale(1.1);
 
+}
 .carrouselAtras{
+    opacity: initial;
     height: 100px;
     width: 100px;
     margin-left: 50px;
-    
+}
+.carrouselAdelante:hover{
+    -webkit-transform: scale(1.1);
+
 
 }
 .carrouselAdelante{
@@ -162,10 +173,16 @@ top: 30px;
 .dos{
     font-size: 100px;
 }
-
 .tres{
     height: 300px;
     width: 300px;
+}
+.tres:hover{
+    height: 300px;
+    width: 300px;
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+  
 }
 
 .cuatro{
