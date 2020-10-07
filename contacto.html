@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
+    <link rel="shortcut icon" href="img/logoFinal.png">
+    <link rel="stylesheet" href="">
 </head>
 <header>
     <!--Hello World!-->
@@ -10,21 +12,33 @@
 <body>
     <!--Hello World!-->
     <section class="formulario" id="formularioCompleto">
+        <h2>CONTACTO</h2>
         <label for="nom_Apellido"> Nombre y Apellido:</label>
         <input type="text" id="nom_Apellido" name="nombreApellido" placeholder="Ingrese su Nombre y Apellido...">
         <label for="mail">Mail:</label>
         <input type="text" id="mail" name="mailIngresar" placeholder="cliente@contacto.com">
         <label for="telf">Telefono(Opcional):</label>
-        <input type="number" id="telf" name="telefono" placeholder="Codigo de area + (15).....">
+        <input type="tel" id="telf" name="telefono" placeholder="Codigo de area + (15).....">
         <label for="consulta"></label>
         <input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">
-
+        <input type="button" id="botonEnviar" name="EnviarBotonName" value="Enviar">
     </section>
     <section class="DatosDeContacto" id="datosDeContactoID">
         <!--Hello World!-->
+        <article>
+            <h2>DATOS DE CONTACTO</h2>
+            <p>Direccion: (.....)</p><br>
+            <p>Telefonos: (.....)</p><br>
+            <p>Celular: (.....)</p><br>
+            <p>Email: (.....)</p><br>
+            <p>Web: (.....)</p>
+        </article>
+        <!--FALTAN AGREGAR LOS TRES ICONOS DE LAS REDES SOCIALES-->
     </section>
     <section class="ubicacion" id="ubicacionMapaGrande">
         <!--Hello World!-->
+        <h2>UBICACIÓN</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8461712059684!2d-58.372466485035325!3d-34.6080511652339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses-419!2sar!4v1602031020668!5m2!1ses-419!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
 </body>
 <footer>
