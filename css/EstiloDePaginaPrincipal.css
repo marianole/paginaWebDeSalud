@@ -9,14 +9,14 @@ header{
     height: 100px;
     width: 100%;
     position:fixed;
-    
-    background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
+
+    background-image: url("../img/fondoOriginal.jpg");
 
 }
 
 footer{
     height: 125px;
-    background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");
+    background-image: url("../img/fondoOriginal.jpg");
     border-bottom: lightblue 5px solid;
 }
 .ContenedorHeader{
