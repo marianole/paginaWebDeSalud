@@ -4,44 +4,90 @@
     <meta charset="UTF-8">
     <title>Contacto</title>
     <link rel="shortcut icon" href="img/logoFinal.png">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/disenoPaginaContacto.css">
 </head>
 <header>
     <!--Hello World!-->
+    <a title="icono" href="index.html"><img src="img/logoFinal.png" alt="icono" id="logoIconHeader"></a>
+    <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
+    <datalist id="Buscador"class="">
+        <select class="" name="">
+            <option value="Covid-19"></option>
+            <option value="Asma"></option>
+            <option value="Zika"></option>
+        </select>
+    </datalist>
+    <nav class="menuSup">
+        <ul id="menuSuperiorID">
+            <li><a href="index.html" class="liMenuSup">Inicio</a></li>
+            <li><a href="#" class="liMenuSup">Vacunas</a></li>
+            <li><a href="#" class="liMenuSup">Hospitales</a></li>
+            <li><a href="#" class="liMenuSup">Contacto</a></li>
+        </ul>
+    </nav>
 </header>
 <body>
-    <!--Hello World!-->
-    <section class="formulario" id="formularioCompleto">
-        <h2>CONTACTO</h2>
-        <label for="nom_Apellido"> Nombre y Apellido:</label>
-        <input type="text" id="nom_Apellido" name="nombreApellido" placeholder="Ingrese su Nombre y Apellido...">
-        <label for="mail">Mail:</label>
-        <input type="text" id="mail" name="mailIngresar" placeholder="cliente@contacto.com">
-        <label for="telf">Telefono(Opcional):</label>
-        <input type="tel" id="telf" name="telefono" placeholder="Codigo de area + (15).....">
-        <label for="consulta"></label>
-        <input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">
-        <input type="button" id="botonEnviar" name="EnviarBotonName" value="Enviar">
-    </section>
-    <section class="DatosDeContacto" id="datosDeContactoID">
+    <main>
         <!--Hello World!-->
-        <article>
-            <h2>DATOS DE CONTACTO</h2>
-            <p>Direccion: (.....)</p><br>
-            <p>Telefonos: (.....)</p><br>
-            <p>Celular: (.....)</p><br>
-            <p>Email: (.....)</p><br>
-            <p>Web: (.....)</p>
-        </article>
-        <!--FALTAN AGREGAR LOS TRES ICONOS DE LAS REDES SOCIALES-->
-    </section>
-    <section class="ubicacion" id="ubicacionMapaGrande">
-        <!--Hello World!-->
-        <h2>UBICACIÓN</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8461712059684!2d-58.372466485035325!3d-34.6080511652339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses-419!2sar!4v1602031020668!5m2!1ses-419!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa" class="mapaClass"></iframe>
-    </section>
+        <section class="formulario" id="formularioCompleto">
+            <h2>CONTACTO</h2>
+            <label for="nom_Apellido"> Nombre y Apellido:</label>
+            <input type="text" id="nom_Apellido" name="nombreApellido" placeholder="Ingrese su Nombre y Apellido...">
+            <label for="mail">Mail:</label>
+            <input type="text" id="mail" name="mailIngresar" placeholder="cliente@contacto.com">
+            <label for="telf">Telefono(Opcional):</label>
+            <input type="tel" id="telf" name="telefono" placeholder="Codigo de area + (15).....">
+            <label for="consulta"></label>
+            <input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">
+            <input type="button" id="botonEnviar" name="EnviarBotonName" value="Enviar">
+        </section>
+        <section class="DatosDeContacto" id="datosDeContactoID">
+            <!--Hello World!-->
+            <article>
+                <h2>DATOS DE CONTACTO</h2>
+                <p>Direccion: (.....)</p><br>
+                <p>Telefonos: (.....)</p><br>
+                <p>Celular: (.....)</p><br>
+                <p>Email: (.....)</p><br>
+                <p>Web: (.....)</p>
+            </article>
+            <!--FALTAN AGREGAR LOS TRES ICONOS DE LAS REDES SOCIALES-->
+        </section>
+        <section class="ubicacion" id="ubicacionMapaGrande">
+            <!--Hello World!-->
+            <h2>UBICACIÓN</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8461712059684!2d-58.372466485035325!3d-34.6080511652339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses-419!2sar!4v1602031020668!5m2!1ses-419!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa" class="mapaClass"></iframe>
+        </section>
+    </main>
 </body>
-<footer>
+<footer class="pieDePagina">
     <!--Hello World!-->
+    <div>
+        <ul class="integrantes"> <!--- ¿por que la clase se llama "hijo1"? -->
+            <h4 class="titulospiedepagina">Datos Del Grupo:</h4>
+            <p>Ledesma Mariano - DNI : 43.180.856 <br>
+                Cristian Gabriel Quipildor - DNI : 41.623.360<br>
+                Fernandez Melian Cristian - DNI : 41.139.455
+            </p>
+        </ul>
+    </div>
+    <div>
+
+        <ul class="menu"> <!--- ¿por que la clase se llama "hijo2"? -->
+            <h4 class="titulospiedepagina">Menú inferior</h4>
+            <li><a href="index.html" class="liMenuInf">Inicio</a></li>
+            <li ><a href="#" class="liMenuInf">Vacunas</a></li>
+            <li ><a href="#" class="liMenuInf">Hospitales</a></li>
+            <li ><a href="#" class="liMenuInf">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="redessociales">
+        <h4 class="titulospiedepagina">Redes Sociales</h4>
+        <a href="https://www.unlam.edu.ar/" target="_blank"><img src="img/unlam.png" class="sub"></a>
+        <a href="https://www.facebook.com/GCBA/" target="_blank"><img src="img/facebook.png"  class="sub"></a>
+        <a href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank"><img src="img/instagram.png"  class="sub"></a>
+
+    </div>
 </footer>
 </html>

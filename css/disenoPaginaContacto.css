@@ -1,0 +1,123 @@
+main{
+    margin: 100px;
+    justify-content: space-around;
+    font-family: 'Muli', sans-serif;
+}
+
+/*HEADER*/
+#seachBoxToMove{
+    position: relative;
+    /* right: 70px; */
+    top: 27px;
+    width: 624px;
+    height: 30px;
+    display: block;
+    -webkit-box-flex: initial;
+    /* justify-items: center; */
+    align-self: flex-start;
+}
+#logoIconHeader{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 96px;
+    height: 96px;
+    display: block;
+}
+
+header{
+    display: flex;
+    /*background-color: #78c8ff;*/
+    /*background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");*/
+    background-image: url("../img/151783-light-blue-vertical-lines-and-stripes-background.jpg");
+    height: 100px;
+    background-size: contain;
+    color:white;
+    justify-content: space-around;
+    border-style: revert;
+    padding: 4px;
+}
+
+/*HEADER MENU*/
+
+#menuSuperiorID{
+    padding: 0;
+}
+
+#menuSuperiorID li{
+    display: inline;
+}
+#menuSuperiorID li a {
+    text-decoration: none;
+    color: white;
+    float: left;
+    padding: 10px;
+    font-family: 'Muli', sans-serif;
+    background-color: #2586d7;
+    justify-items: center;
+    display: block;
+}
+
+#menuSuperiorID li a:hover{
+    background-color: #cde0ef;
+    margin-top: -2px;
+}
+
+
+
+/*FOOTER*/
+.pieDePagina{
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    flex-direction: row;
+
+    align-items: baseline;
+    justify-content: space-around;
+    /*background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");*/
+    background-image: url("../img/151783-light-blue-vertical-lines-and-stripes-background.jpg");
+    background-size: contain;
+}
+
+.sub{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.sub:hover{
+    width: 60px;
+    height: 60px;
+}
+.titulospiedepagina{
+    color: #111111;
+    font-family: 'Muli', sans-serif;
+}
+.integrantes{
+    color: #000000;
+    font-family: 'Muli', sans-serif;
+}
+.menu{
+    color: #000000;
+}
+.liMenuInf{
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    clear: both;
+}
+
+.DatosDeContacto{
+    justify-content: center;
+}
+.ubicacion{
+    justify-content: center;
+}
+/*#nom_Apellido, #mail, #telf{
+
+    float: right;
+}*/
