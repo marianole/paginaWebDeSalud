@@ -31,18 +31,40 @@ align-items: center;
   height: 500px;
   width: 500px;
 }
-.prevencionesImg{
-  width: 400px;
-  height: 600px;
-}
 
+.prevenciones{
+  display:grid;
+  grid-template-areas: "prevenciones prevenciones"
+                        "titulo titulo"
+                        "aside aside";
+}
+.prevenciones h2{
+  grid-area: titulo;
+}
+.prevencionesImg{
+  width: 100%;
+  height:600px;
+  grid-area: prevenciones;
+}
+aside{
+  width: 100%;
+  grid-area: aside;
+  display: flex;
+  justify-content: space-around;
+}
+.mapa{
+  float: right;
+
+}
+.hospital{
+height: 200px;
+width: 200px;
+}
 
 .sintomasYformulario{
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 form{
   border-style: solid;
@@ -54,6 +76,9 @@ input{
 display: block;
 margin-bottom: 10px;
 
+}
+.labelRara{
+  display: block;
 }
 .pregunta{
   display: block;
@@ -82,7 +107,6 @@ header input{
    background-color: white;
     width: 500px;
     height: 100px;
-    margin-bottom: 0px;
     border-style: solid;
     border-radius: 10px;
     font-size: 20px;

@@ -67,6 +67,18 @@ privacidad descritos en 'Ver las condiciones y políticas</p>
       <label class="pregunta"  for="viajes">¿Ha viajado por la republica argentina?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
         Si<input class="radio" type="radio" name="viajes">
         No<input class="radio" type="radio" name="viajes">
+      <label class="labelRara" for="paises">-Paises visitados</label>
+      <input list="datalist" id="paises"name="paises" placeholder="paises">
+      <datalist id="datalist">
+        <select class="" name="">
+<option value="salta"></option>
+<option value="jujuy"></option>
+<option value="cordoba"></option>
+<option value="catamarca"></option>
+<option value="tierra del fuego"></option>
+        </select>
+
+      </datalist>
 <h3>Sintomas presentados</h3>
       <label class="pregunta"  for="fiebre">¿Tuviste Fiebre mayor a 38 grados?</label>
         Si<input class="radio" type="radio" name="fiebre">
@@ -83,6 +95,11 @@ privacidad descritos en 'Ver las condiciones y políticas</p>
       <label class="pregunta"for="respirar">¿Tuviste deficultades para respirar?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
         Si<input class="radio"type="radio" name="respirar">
         No<input class="radio"type="radio" name="respirar">
+
+
+        <label class="labelRara"for="direccion">-Direccion</label>
+             <input type="text"  id="direccion"name="direccion" placeholder="Direccion" required maxlength="50">
+
        <label for=""></label>
           <input type="reset"  name="reset">
         <input type="submit" name="submit">
@@ -96,23 +113,24 @@ privacidad descritos en 'Ver las condiciones y políticas</p>
 
 <div class="prevenciones">
 
-  <article class="">
-
     <img class="prevencionesImg"src="img\prevencionContraElCoronavirus.png" alt="prevenciones contra el coronavirus">
+<h2>Hospital mas cercano especializado en la enfermedad</h2>
+  <aside class="mapaYhospital">
+    <div class="datosDeHospitalYimagen">
+<h3>Nombre del hospital</h3>
+<ul>
+  <li>Telefono</li>
+  <li>Direccion</li>
+  <li>Ciudad</li>
+</ul>
+<img class="hospital"src="img/fotoDeHospital.jpg" alt="hospital">
+    </div>
 
-  </article>
 
-  <aside class="mapa">
- <!-- en esta parte seria le mapa  -->
+ <iframe class="mapa"src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d82788.83236872022!2d-58.482312377035264!3d-34.623722023224296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitales%20cerca%20de%20Capital%20Federal!5e0!3m2!1ses-419!2sar!4v1602161489975!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </aside>
 
 </div>
-
-
-
-
-
-
 
 </main>
 
