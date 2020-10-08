@@ -1,8 +1,8 @@
 main{
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-bottom: 100px;
-    margin-right: 50px;
+    margin-top: 0px;  /*100px*/
+    margin-left: 0px;
+    margin-bottom: 0px; /*100px*/
+    margin-right: 0px;
     justify-content: space-around;
     font-family: 'Muli', sans-serif;
 }
@@ -113,17 +113,64 @@ header{
 
 .formulario{
     display: grid;
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 70px 70px 70px 70px 70px;
+    grid-template-columns: 150px 195px;
+    grid-template-rows: 70px 70px 70px 200px 70px;
     justify-content: left;
+    /*background-color: #999999;*/
+    margin-right: 300px;
+    clear: right;
+    padding: 20px;
+    width: 371px;
 }
-
+label {
+    font-size: 98%;
+}
 .DatosDeContacto{
     justify-content: center;
+    position: relative;
+
 }
 .ubicacion{
     display: grid;
     grid-template-rows: 50px 600px 50px;
     justify-content: center;
     background-color: rgba(43,43,43,0.56);
+}
+#nom_Apellido, #mail, #telf{
+    height: 24px;
+    width: 185px;
+}
+
+#consulta{
+    height: 185px;
+    width: 185px;
+    display: block;
+}
+#botonEnviar{
+    height: 31px;
+    width: 73px;
+    position: relative;
+    left: 270px;
+    display: block;
+    font-family: "Bebas Neue";
+    background-color: #2586d7;
+    color: white;
+    box-shadow: none;
+}
+#mail{
+    position: relative;
+    top: -7px;
+    display: block;
+}
+#telf{
+    position: relative;
+    top: -6px;
+    display: block;
+}
+#tituloUbicacion{
+    text-align: center;
+}
+
+#tituloContacto{
+    padding-left: 20px;
 }
