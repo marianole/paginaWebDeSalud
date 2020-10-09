@@ -4,20 +4,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/indexBaseDeLasPaginasWeb.css"> <!-- "css/" para que detecte la carpeta" -->
     <link rel="stylesheet" type="text/css" href="css/EstiloDePaginaPrincipal.css">
+    <link rel="shortcut icon" href="img\logoFinal.png" alt="logo">
 
     <title>Inicio</title> <!--- El archivo tiene que llamarse index.htlm pero en el titulo tiene que aparecer Inico-->
 </head>
 
   <header>
     
-      <img class="elemento1"src="img\logoFinal.png" alt="imagen">
+  <img class="elemento1"src="img\logoFinal.png" alt="imagen">
   <div class="elemento0">
     <img class="elemento2"src="img\search.png" alt="fotoDeBusqueda">
     <input class="elemento3"type="search" name="" value="" placeholder="Ingrese aquí para buscar">
   </div>
 
 
-  </header> <!-- Cambiar la lista de la datalist porque está mal, no coincide con la lista de enfermedades que elegí.-->
+  </header> 
   <body>
 
     <section class="carrousel"> <!-- esta seccion define el carrousel-->
@@ -44,7 +45,7 @@
           <p class="palabras"> Vacunas </p>
           </div>
           <div>
-            <img src ="img\hospital.png" alt="hospital" class="columna hospital">
+           <a href ="..\pw-eva-01\mapaDeHospitales.html" > <img src ="img\hospital.png" alt="hospital" class="columna hospital"></a>
             <p class="palabras"> Hospitales </p>
             </div>
         </section>
@@ -63,32 +64,32 @@
 
   <footer class="pieDePagina">
     <div>
-      <ul class="integrantes"> <!--- ¿por que la clase se llama "hijo1"? -->
+      <ul class="integrantes"> 
         <h4 class="titulospiedepagina">Datos Del Grupo:</h4>
-          <li>Ledesma Mariano - DNI : 43.180.856</li>
-          <li>Cristian Gabriel Quipildor - DNI : 41.623.360 </li>
-          <li>Fernandez Melian Cristian - DNI : 41.139.455</li>
+          <li class="colorVinculos">Ledesma Mariano - DNI : 43.180.856</li>
+          <li class="colorVinculos">Cristian Gabriel Quipildor - DNI : 41.623.360 </li>
+          <li class="colorVinculos">Fernandez Melian Cristian - DNI : 41.139.455</li>
       </ul>
     </div>
     <div>
 
-      <ul class="menu"> <!--- ¿por que la clase se llama "hijo2"? -->
+      <ul class="menu"> 
         <h4 class="titulospiedepagina">Menú inferior</h4>
-          <li><a href="listadoDeEnfermedades.html">Enfermedades</a></li>
-          <li><a href="#" >Vacunas</a></li>
-          <li><a href="#">Hospitales</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="listadoDeEnfermedades.html" class="colorVinculos">Enfermedades</a></li>
+          <li><a href="#" class="colorVinculos" >Vacunas</a></li>
+          <li><a href="mapaDeHospitales.html" class="colorVinculos">Hospitales</a></li>
+          <li><a href="contacto.html" class="colorVinculos">Contacto</a></li>
         </ul>
     </div>
 
     <div class="redessociales">
       <h4 class="titulospiedepagina">Redes Sociales</h4>
-      <a href="https://www.unlam.edu.ar/" target="_blank"><img src="img/unlam.png" class="sub"></a>
+      <a href="https://www.unlam.edu.ar/"  target="_blank"><img src="img/unlam.png" class="sub"></a>
       <a href="https://www.facebook.com/GCBA/" target="_blank"><img src="img/facebook.png"  class="sub"></a>
       <a href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank"><img src="img/instagram.png"  class="sub"></a>
 
     </div>
-  </footer> <!-- faltan las redes sociales, se pueden poner las de UNLAM -->
+  </footer> 
 
 </body>
 </html>
