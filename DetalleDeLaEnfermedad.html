@@ -2,25 +2,32 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="css\DetalleDeLaEnfermedad.css">
+    <link rel="stylesheet" href="css/estilosComunesAPagNoIndex.css">
     <!-- <link rel="stylesheet" href="css\indexBaseDeLasPaginasWeb.css"> -->
+    <link rel="shortcut icon" href="img/logoFinal.png">
     <meta charset="utf-8">
-    <title></title>
+    <title>COVID-19</title>
   </head>
   <body>
-<head>
+<!--<head>-->
 <header>
-
-  <img src="img\images.png" alt="icono">
-  <div id="searchBoxConfig">
-  <input list="Buscador" name="datalist"  placeholder="Ingrese aquí para buscar..." >
+    <a title="icono" href="index.html"><img src="img/logoFinal.png" alt="icono" id="logoIconHeader"></a>
+    <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
     <datalist id="Buscador"class="">
-      <select class="selectorDL" name="" id="valoresSearchBox_HOME">
-            <option value="coronavirus"></option>
-            <option value="cancer"></option>
-      </select>
-     </datalist>
-  </div>
-
+        <select class="" name="">
+            <option value="Covid-19"></option>
+            <option value="Asma"></option>
+            <option value="Zika"></option>
+        </select>
+    </datalist>
+    <nav class="menuSup">
+        <ul id="menuSuperiorID">
+            <li><a href="index.html" class="liMenuSup">Inicio</a></li>
+            <li><a href="vacunas.html" class="liMenuSup">Vacunas</a></li>
+            <li><a href="mapaDeHospitales.html" class="liMenuSup">Hospitales</a></li>
+            <li><a href="contacto.html" class="liMenuSup">Contacto</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
@@ -31,7 +38,7 @@
 <article class="primero">
 
 <div class="ImagenConDescripcion">
-         <img class="descripcionImg"src="img\imagenDescriptiva.jpg" alt="coronavirus">
+         <img class="descripcionImg" src="img\imagenDescriptiva.jpg" alt="coronavirus">
        <p>El COVID-19nota 2 (Acerca de este sonido pronunciación (?·i); acrónimo del inglés coronavirus disease 2019),4 también conocida como enfermedad por coronavirus e incorrectamente como neumonía por coronavirus,nota 1 es una enfermedad infecciosa causada por el virus SARS-CoV-2.910
           Produce síntomas similares a los de la gripe o catarro, entre los que se incluyen fiebre, tos ,11 disnea, mialgia y fatiga.1213 En casos graves se caracteriza por producir neumonía, síndrome de dificultad respiratoria aguda,14 sepsis15 y choque séptico que conduce a cerca de 3,75 % de los infectados a la muerte según la OMS.16 No existe tratamiento específico; las medidas terapéuticas principales consisten en aliviar los síntomas y mantener las funciones vitales.12
        </p>
@@ -136,4 +143,33 @@ privacidad descritos en 'Ver las condiciones y políticas</p>
 
 </head>
   </body>
+  <footer class="pieDePagina">
+      <div>
+          <ul class="integrantes"> <!--- ¿por que la clase se llama "hijo1"? -->
+              <h4 class="titulospiedepagina">Datos Del Grupo:</h4>
+              <p>Ledesma Mariano - DNI : 43.180.856 <br>
+                  Cristian Gabriel Quipildor - DNI : 41.623.360<br>
+                  Fernandez Melian Cristian - DNI : 41.139.455
+              </p>
+          </ul>
+      </div>
+      <div>
+
+          <ul class="menu"> <!--- ¿por que la clase se llama "hijo2"? -->
+              <h4 class="titulospiedepagina">Menú inferior</h4>
+              <li><a href="index.html" class="liMenuInf">Inicio</a></li>
+              <li ><a href="vacunas.html" class="liMenuInf">Vacunas</a></li>
+              <li ><a href="mapaDeHospitales.html" class="liMenuInf">Hospitales</a></li>
+              <li ><a href="contacto.html" class="liMenuInf">Contacto</a></li>
+          </ul>
+      </div>
+
+      <div class="redessociales">
+          <h4 class="titulospiedepagina">Redes Sociales</h4>
+          <a href="https://www.unlam.edu.ar/" target="_blank"><img src="img/unlam.png" class="sub"></a>
+          <a href="https://www.facebook.com/GCBA/" target="_blank"><img src="img/facebook.png"  class="sub"></a>
+          <a href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank"><img src="img/instagram.png"  class="sub"></a>
+
+      </div>
+  </footer>
 </html>

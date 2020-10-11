@@ -5,29 +5,38 @@
     <title>Mapa De Hospitales</title>
     <meta charset="utf-8">
     <link rel ="stylesheet" type ="text/css" href="css/EstiloMapaDeHospitales.css">
-    <link rel="stylesheet" type ="text/css" href="css/indexBaseDeLasPaginasWeb.css"> <!-- "css/" para que detecte la carpeta" -->
+    <!--<link rel="stylesheet" type ="text/css" href="css/indexBaseDeLasPaginasWeb.css">--> <!-- "css/" para que detecte la carpeta" -->
     <link rel="shortcut icon" href="img/logoFinal.png" alt="logo">
+    <link rel="stylesheet" href="css/estilosComunesAPagNoIndex.css">
 </head>
 <body>
     <header>
-            <section class="ContenedorHeader" >
-                <!-- header section -->
-                <img src="img/logoFinal.png" alt="icono" class="elemento elemento0" >
-                <label for="searchBox">
-                <a id="a"> <img src="img\search.png" id="searchIcon" class="elemento elemento1">
-                </a>
-                </label>
-                <input type="search" class="elemento elemento2" id="searchBox" name="sBox" placeholder="Ingrese aquí para buscar" >
-            </section>
+        <a title="icono" href="index.html"><img src="img/logoFinal.png" alt="icono" id="logoIconHeader"></a>
+        <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
+        <datalist id="Buscador"class="">
+            <select class="" name="">
+                <option value="Covid-19"></option>
+                <option value="Asma"></option>
+                <option value="Zika"></option>
+            </select>
+        </datalist>
+        <nav class="menuSup">
+            <ul id="menuSuperiorID">
+                <li><a href="index.html" class="liMenuSup">Inicio</a></li>
+                <li><a href="vacunas.html" class="liMenuSup">Vacunas</a></li>
+                <li><a href="mapaDeHospitales.html" class="liMenuSup">Hospitales</a></li>
+                <li><a href="contacto.html" class="liMenuSup">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="menuInicio">
+    <!--<nav class="menuInicio">
            <a href="index.html"> INICIO </a>
            <a href="listadoDeEnfermedades.html"> ENFERMEDADES </a>
            <a href="#"> VACUNAS </a>
            <a href="mapaDeHospitales.html"> HOSPITALES </a>
            <a href="contacto.html"> CONTACTO </a>
-    </nav>
+    </nav>-->
 <section class = "contenedorTitulo">
     <h1 class=titulo>
         MAPA DE HOSPITALES DISPONIBLES
@@ -55,8 +64,8 @@
               <ul >
                 <h4 class="titulospiedepagina">Menú inferior</h4>
                   <li><a href="listadoDeEnfermedades.html">Enfermedades</a></li>
-                  <li><a href="#" >Vacunas</a></li>
-                  <li><a href="#">Hospitales</a></li>
+                  <li><a href="vacunas.html" >Vacunas</a></li>
+                  <li><a href="mapaDeHospitales.html">Hospitales</a></li>
                   <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
