@@ -2,7 +2,7 @@ header{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-image: url("../img/151783-light-blue-vertical-lines-and-stripes-background.jpg");
+  background-image: url("img/151783-light-blue-vertical-lines-and-stripes-background.jpg");
 }
 .iconoYBuscador{
   display: flex;
@@ -22,7 +22,7 @@ header{
 
 #menuSuperiorID {
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
   color:#2586d7;
