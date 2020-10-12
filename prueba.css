@@ -19,7 +19,10 @@ header{
   height: 45px;
   margin-right: 20px;
 }
-
+#menuSuperiorID{
+  position: sticky;
+  top: 0;
+}
 #menuSuperiorID {
   display: flex;
 
