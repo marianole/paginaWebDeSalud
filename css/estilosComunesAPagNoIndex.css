@@ -59,61 +59,52 @@
 
 
 /*HEADER*/
-
-
-#seachBoxToMove{
-    position: relative;
-    /* right: 70px; */
-    top: 20px;
-    width: 624px;
-    height: 30px;
-    display: block;
-    -webkit-box-flex: initial;
-    /* justify-items: center; */
-    align-self: flex-start;
+header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url("../img/151783-light-blue-vertical-lines-and-stripes-background.jpg");
+}
+.iconoYBuscador{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 #logoIconHeader{
-    position: relative;
-    left: 0px;
-    top: 0px;
-    width: 96px;
-    height: 96px;
-    display: block;
+  height: 96px;
+  width: 96px;
+  margin-left: 20px;
 }
-
-header{
-    display: flex;
-    /*background-color: #78c8ff;*/
-    /*background-image: url("https://image.freepik.com/vector-gratis/banner-fondo-salud-electrocardiograma-medico_1017-20049.jpg");*/
-    background-image: url("../img/151783-light-blue-vertical-lines-and-stripes-background.jpg");
-    height: 100px;
-    background-size: contain;
-    color:white;
-    justify-content: space-around;
-    border-style: revert;
-    padding: 4px;
+#seachBoxToMove{
+  width: 600px;
+  height: 45px;
+  margin-right: 20px;
 }
-
-
 #menuSuperiorID{
-    padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
+#menuSuperiorID {
+  display: flex;
 
-#menuSuperiorID li{
-    display: inline;
+  justify-content: center;
+  align-items: center;
+  color:#2586d7;
+  background-color: #2586d7;
 }
-#menuSuperiorID li a {
-    text-decoration: none;
-    color: white;
-    float: left;
-    padding: 10px;
-    font-family: 'Muli', sans-serif;
-    background-color: #2586d7;
-    justify-items: center;
-    display: block;
+#menuSuperiorID a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 90px;
+  margin-left: 2px;
+  color:white;
+  font-family: 'Muli', sans-serif;
+  text-decoration: none;
 }
-
-#menuSuperiorID li a:hover{
-    background-color: #cde0ef;
-    margin-top: -2px;
+#menuSuperiorID a:hover{
+  background-color: #cde0ef;
+  margin-top: -2px;
 }
