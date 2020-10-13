@@ -7,72 +7,70 @@
     <link rel="stylesheet" href="css/disenoPaginaContacto.css">
     <link rel="stylesheet" href="css/estilosComunesAPagNoIndex.css">
 </head>
-
-<body>
-  <header>
+<header>
 
     <div class="iconoYBuscador">
-      <a title="icono" href="index.html"><img src="img/logoFinal.png" alt="icono" id="logoIconHeader"></a>
-      <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
-      <datalist id="Buscador"class="">
-          <select class="" name="">
-              <option value="Covid-19"></option>
-              <option value="Asma"></option>
-              <option value="Zika"></option>
-          </select>
-      </datalist>
+        <a title="icono" href="index.html"><img src="img/logoFinal.png" alt="icono" id="logoIconHeader"></a>
+        <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
+        <datalist id="Buscador"class="">
+            <select class="" name="">
+                <option value="Covid-19"></option>
+                <option value="Asma"></option>
+                <option value="Zika"></option>
+            </select>
+        </datalist>
     </div>
 
-      <!-- <ul id="menuSuperiorID">
-          <li><a href="index.html" class="liMenuSup">Inicio</a></li>
-          <li><a href="vacunas.html" class="liMenuSup">Vacunas</a></li>
-          <li><a href="mapaDeHospitales.html" class="liMenuSup">Hospitales</a></li>
-          <li><a href="contacto.html" class="liMenuSup">Contacto</a></li>
-      </ul> -->
+    <!-- <ul id="menuSuperiorID">
+        <li><a href="index.html" class="liMenuSup">Inicio</a></li>
+        <li><a href="vacunas.html" class="liMenuSup">Vacunas</a></li>
+        <li><a href="mapaDeHospitales.html" class="liMenuSup">Hospitales</a></li>
+        <li><a href="contacto.html" class="liMenuSup">Contacto</a></li>
+    </ul> -->
 
 
 </header>
-<nav class="menuSuperiorID" id="menuSuperiorID">
-   <a href="index.html">Inicio</a>
-   <a href="vacunas.html">Vacunas</a>
-   <a href="mapaDeHospitales.html">Hospitales</a>
-   <a href="contacto.html">Contacto</a>
-</nav>
-  <main>
-        <!--Hello World!-->
-    <h2 id="tituloContacto">CONTACTO</h2>
-    <div class="formularioYdatosDeContacto">
-      <form class="formulario" id="formularioCompleto">
+<body>
+    <nav class="menuSuperiorID" id="menuSuperiorID">
+       <a href="index.html">Inicio</a>
+       <a href="vacunas.html">Vacunas</a>
+       <a href="mapaDeHospitales.html">Hospitales</a>
+       <a href="contacto.html">Contacto</a>
+    </nav>
+    <main>
+            <!--Hello World!-->
+        <h2 id="tituloContacto">CONTACTO</h2>
+        <div class="formularioYdatosDeContacto">
+          <form class="formulario" id="formularioCompleto">
 
-          <label for="nom_Apellido"> Nombre y Apellido:</label>
-          <input type="text" id="nom_Apellido" name="nombreApellido" placeholder="Ingrese su Nombre y Apellido...">
-          <label for="mail">Mail:</label>
-          <input type="text" id="mail" name="mailIngresar" placeholder="cliente@contacto.com">
-          <label for="telf">Telefono (Opcional):</label>
-          <input type="tel" id="telf" name="telefono" placeholder="Codigo de area + (15).....">
-          <label for="consulta"></label>
-          <input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">
-          <input type="button" id="botonEnviar" name="EnviarBotonName" value="Enviar">
-      </form>
-      <section class="DatosDeContacto" id="datosDeContactoID">
-          <!--Hello World!-->
-          <article>
-              <h2>DATOS DE CONTACTO</h2>
-              <p>Direccion: (.....)</p><br>
-              <p>Telefonos: (.....)</p><br>
-              <p>Celular: (.....)</p><br>
-              <p>Email: (.....)</p><br>
-              <p>Web: (.....)</p>
-          </article>
-          <!--FALTAN AGREGAR LOS TRES ICONOS DE LAS REDES SOCIALES-->
-      </section>
-    </div>
-    <section class="ubicacion" id="ubicacionMapaGrande">
-        <!--Hello World!-->
-        <h2 id="tituloUbicacion">UBICACIÓN</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8461712059684!2d-58.372466485035325!3d-34.6080511652339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses-419!2sar!4v1602031020668!5m2!1ses-419!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa" class="mapaClass"></iframe>
-      </section>
-  </main>
+              <label for="nom_Apellido"> Nombre y Apellido:</label>
+              <input type="text" id="nom_Apellido" name="nombreApellido" placeholder="Ingrese su Nombre y Apellido...">
+              <label for="mail">Mail:</label>
+              <input type="text" id="mail" name="mailIngresar" placeholder="cliente@contacto.com">
+              <label for="telf">Telefono (Opcional):</label>
+              <input type="tel" id="telf" name="telefono" placeholder="Codigo de area + (15).....">
+              <label for="consulta"></label>
+              <input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">
+              <input type="button" id="botonEnviar" name="EnviarBotonName" value="Enviar">
+          </form>
+          <section class="DatosDeContacto" id="datosDeContactoID">
+              <!--Hello World!-->
+              <article>
+                  <h2>DATOS DE CONTACTO</h2>
+                  <p><h5>Direccion:</h5> Gral. Félix Olazábal 319, B1714 FZC, Provincia de Buenos Aires<br>
+                  <h5>Telefonos:</h5> 0810-333-4411<br>
+                  <h5>Email:</h5> ministeriosalud@argentina.gob<br>
+                  <h5>Web:</h5> sanatoriosdeloeste.com</p>
+              </article>
+              <!--FALTAN AGREGAR LOS TRES ICONOS DE LAS REDES SOCIALES-->
+          </section>
+        </div>
+        <section class="ubicacion" id="ubicacionMapaGrande">
+            <!--Hello World!-->
+            <h2 id="tituloUbicacion">UBICACIÓN</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.010412491933!2d-58.66246648503382!3d-34.654439967690024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf5900e2bc6d%3A0x6b4dce9d03e1501e!2sSanatorio%20del%20Oeste%20Ituzaing%C3%B3!5e0!3m2!1ses-419!2sar!4v1602627034361!5m2!1ses-419!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa" class="mapaClass"></iframe>
+          </section>
+      </main>
 
 </body>
 
