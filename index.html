@@ -2,29 +2,38 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/indexBaseDeLasPaginasWeb.css"> <!-- "css/" para que detecte la carpeta" -->
     <link rel="stylesheet" type="text/css" href="css/EstiloDePaginaPrincipal.css">
     <link rel="shortcut icon" href="img\logoFinal.png" alt="logo">
 
     <title>Inicio</title> <!--- El archivo tiene que llamarse index.htlm pero en el titulo tiene que aparecer Inico-->
 </head>
 
-  <header>
-    
-  <img class="elemento1"src="img\logoFinal.png" alt="imagen">
-  <div class="elemento0">
-    <img class="elemento2"src="img\search.png" alt="fotoDeBusqueda">
-    <input class="elemento3"type="search" name="" value="" placeholder="Ingrese aquí para buscar">
+<header>
+
+  <img class="elemento0"src="img\logoFinal.png" alt="imagen">
+
+  <div class="elemento1">
+  <img class="elemento2"src="img\search.png" alt="fotoDeBusqueda">
+  <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
+  <datalist id="Buscador"> <!--este datalist debo ponerle en id el nombre del imput list-->
+      <select class="">
+          <option value="Covid-19"></option>
+          <option value="Asma"></option>
+          <option value="Zika"></option> 
+
+      </select>
+  </datalist>
+
   </div>
 
-
-  </header> 
+</header>
   <body>
 
     <section class="carrousel"> <!-- esta seccion define el carrousel-->
-    <img src="img\atras.png" class="carrouselAtras">
-    <img src="img\adelante.png" class="carrouselAdelante">
-    </section>
+      <img src="img\familia.jpg" class="familia">
+      <img src="img\atras.png" class="carrouselAtras">
+      <img src="img\adelante.png" class="carrouselAdelante">
+      </section>
 
     <section> <!--esta seccion es para el titulo-->
       <div class="titulo">

@@ -1,4 +1,8 @@
-main{margin: 75px;}
+main{
+  
+  margin: 75px;
+
+}
 h1,h2{
   margin:100px 0px;
   background-color: #78c8ff;
@@ -10,11 +14,7 @@ h1,h2{
 display: flex;
 align-items: center;
 }
-/* div img{
-  margin-right: 10px;
-  height: 700px;
-  width: 500px
-} */
+
 body{
   font-family: serif;
   font-size: 11rm;
@@ -100,28 +100,7 @@ margin-bottom: 10px;
 }
 
 
-/* probando inicion */
-/* header{
-  display: flex;
-  background-color: #78c8ff;
-  justify-content: space-around;
-  align-items:center;
-}
-header img{
-  height: 110px;
-  width: 100px;
 
-}
-
-header input{
-   background-color: white;
-    width: 500px;
-    height: 100px;
-    border-style: solid;
-    border-radius: 10px;
-    font-size: 20px;
-    text-align: center;
- } */
 
 .parrafoSobreImg{
   font-family: 'Muli', sans-serif;

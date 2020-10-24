@@ -4,38 +4,37 @@
     <meta charset="UTF-8">
     <title>Calendario de vacunacion</title>
     <link rel="shortcut icon" href="img/logoFinal.png">
-    <link rel="stylesheet" href="css/estilosComunesAPagNoIndex.css">
+    <link rel="stylesheet" href="css/estilosComunesAPaginasNoIndex.css">
 </head>
 
 <body>
-  <header>
+    <header>
 
-    <div class="iconoYBuscador">
-      <a title="icono" href="index.html"><img src="img/logoFinal.png" alt="icono" id="logoIconHeader"></a>
-      <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
-      <datalist id="Buscador"class="">
-          <select class="" name="">
-              <option value="Covid-19"></option>
-              <option value="Asma"></option>
-              <option value="Zika"></option>
-          </select>
-      </datalist>
-    </div>
+        <img class="elemento0"src="img\logoFinal.png" alt="imagen">
 
-      <!-- <ul id="menuSuperiorID">
-          <li><a href="index.html" class="liMenuSup">Inicio</a></li>
-          <li><a href="vacunas.html" class="liMenuSup">Vacunas</a></li>
-          <li><a href="mapaDeHospitales.html" class="liMenuSup">Hospitales</a></li>
-          <li><a href="contacto.html" class="liMenuSup">Contacto</a></li>
-      </ul> -->
+        <div class="elemento1">
+        <img class="elemento2"src="img\search.png" alt="fotoDeBusqueda">
+        <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
+        <datalist id="Buscador"> <!--este datalist debo ponerle en id el nombre del imput list-->
+            <select class="">
+                <option value="Covid-19"></option>
+                <option value="Asma"></option>
+                <option value="Zika"></option> 
 
+            </select>
+        </datalist>
 
-</header>
-<nav class="menuSuperiorID" id="menuSuperiorID">
-   <a href="index.html">Inicio</a>
-   <a href="vacunas.html">Vacunas</a>
-   <a href="mapaDeHospitales.html">Hospitales</a>
-   <a href="contacto.html">Contacto</a>
+        </div>
+
+    </header>
+
+<nav class="menuSuperior">
+ <a href="index.html" class="menuItem">Inicio</a>
+ <a href="vacunas.html" class="menuItem">Vacunas</a>
+ <a href="mapaDeHospitales.html" class="menuItem">Hospitales</a>
+ <a href="contacto.html" class="menuItem">Contacto</a>
+ <a href="listadoDeEnfermedades.html" class="menuItem">Enfermedades</a>
+
 </nav>
 
 
@@ -43,31 +42,30 @@
 </body>
 <footer class="pieDePagina">
     <div>
-        <ul class="integrantes"> <!--- ¿por que la clase se llama "hijo1"? -->
-            <h4 class="titulospiedepagina">Datos Del Grupo:</h4>
-            <p>Ledesma Mariano - DNI : 43.180.856 <br>
-                Cristian Gabriel Quipildor - DNI : 41.623.360<br>
-                Fernandez Melian Cristian - DNI : 41.139.455
-            </p>
-        </ul>
+      <ul class="integrantes"> 
+        <h4 class="titulospiedepagina">Datos Del Grupo:</h4>
+          <li class="colorVinculos">Ledesma Mariano - DNI : 43.180.856</li>
+          <li class="colorVinculos">Cristian Gabriel Quipildor - DNI : 41.623.360 </li>
+          <li class="colorVinculos">Fernandez Melian Cristian - DNI : 41.139.455</li>
+      </ul>
     </div>
     <div>
 
-        <ul class="menu"> <!--- ¿por que la clase se llama "hijo2"? -->
-            <h4 class="titulospiedepagina">Menú inferior</h4>
-            <li><a href="index.html" class="liMenuInf">Inicio</a></li>
-            <li ><a href="vacunas.html" class="liMenuInf">Vacunas</a></li>
-            <li ><a href="mapaDeHospitales.html" class="liMenuInf">Hospitales</a></li>
-            <li ><a href="contacto.html" class="liMenuInf">Contacto</a></li>
+      <ul class="menu"> 
+        <h4 class="titulospiedepagina">Menú inferior</h4>
+          <li><a href="listadoDeEnfermedades.html" class="colorVinculos">Enfermedades</a></li>
+          <li><a href="vacunas.html" class="colorVinculos" >Vacunas</a></li>
+          <li><a href="mapaDeHospitales.html" class="colorVinculos">Hospitales</a></li>
+          <li><a href="contacto.html" class="colorVinculos">Contacto</a></li>
         </ul>
     </div>
 
     <div class="redessociales">
-        <h4 class="titulospiedepagina">Redes Sociales</h4>
-        <a href="https://www.unlam.edu.ar/" target="_blank"><img src="img/unlam.png" class="sub"></a>
-        <a href="https://www.facebook.com/GCBA/" target="_blank"><img src="img/facebook.png"  class="sub"></a>
-        <a href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank"><img src="img/instagram.png"  class="sub"></a>
+      <h4 class="titulospiedepagina">Redes Sociales</h4>
+      <a href="https://www.unlam.edu.ar/"  target="_blank"><img src="img/unlam.png" class="sub"></a>
+      <a href="https://www.facebook.com/GCBA/" target="_blank"><img src="img/facebook.png"  class="sub"></a>
+      <a href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank"><img src="img/instagram.png"  class="sub"></a>
 
     </div>
-</footer>
+  </footer> 
 </html>
