@@ -135,21 +135,21 @@ text-align: center;
 }
 .enfermedad{
     margin-left: 20px;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
 }
 
 .inyeccion{
     margin-left: 20px;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
 
 }
 
 .hospital{
     margin-left: 20px;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
 }
 
 .palabras{
@@ -161,7 +161,7 @@ text-align: center;
 }
 
 
-.llama{
+.contenedorLlama{
     height: 400px;
     background-color: rgb(165, 189, 188);
     align-items: flex-end;
@@ -174,27 +174,51 @@ text-align: center;
     justify-content: space-around;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 20px;
-}
-.llama1{
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    border : black 1px solid;
 }
 
-.uno{
+@media (max-width:1150px){
+    .contenedorLlama{
+    height: 200px;
+}
+}
+
+.SiTenesSintomas{
 font-size: 35px;
 top: 30px;
 
 }
 
-.dos{
+@media (max-width : 1150px){
+    .SiTenesSintomas{
+        font-size: 20px;
+
+    }
+}
+
+.SiTenesSintomas2{
     font-size: 100px;
 }
-.tres{
+@media (max-width : 1150px){
+    .SiTenesSintomas2{
+        font-size: 50px;
+
+    }
+}
+
+
+.telefono{
     height: 300px;
     width: 300px;
 }
-.tres:hover{
+
+@media (max-width:1150px){
+    .telefono{
+    height: 150px;
+    width: 150px;
+    }
+}
+.telefono:hover{
     height: 300px;
     width: 300px;
     -moz-transform: rotate(15deg);
@@ -202,8 +226,23 @@ top: 30px;
 
 }
 
-.cuatro{
+@media (max-width:1150px){
+    .telefono:hover{
+    height: 150px;
+    width: 150px;
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    }
+}
+
+.numero{
     font-size: 250px;
+}
+
+@media (max-width:1150px){
+    .numero{
+    font-size: 100px;
+}
 }
 
 .pieDePagina{
