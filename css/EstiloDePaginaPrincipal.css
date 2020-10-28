@@ -16,7 +16,7 @@ header{
     right: 0px;
     z-index: 2;
     height: 100px;
-    padding-right: 150px;
+    padding-right: 5%;
     position: sticky;
     border: gray 1px solid;
   
@@ -36,6 +36,7 @@ header{
       display:flex;
       flex-direction: row;
       align-content: flex-start;
+      width:70%;
   }
   
   .elemento2{
@@ -45,21 +46,8 @@ header{
   
   #seachBoxToMove{
       height: 40px;
-      width: 600px;
+      width: 100% ;
   
-  }
-  
-  @media (max-width : 900px){
-      #seachBoxToMove{
-  
-      width: 400px;
-      }
-  }
-  @media (max-width : 700px){
-      #seachBoxToMove{
-  
-      width: 250px;
-      }
   }
   
 
@@ -80,6 +68,8 @@ header{
     z-index: 0;
 
 }
+
+
 
 .carrouselAtras:hover{
     -webkit-transform: scale(1.1);
@@ -131,24 +121,25 @@ text-align: center;
     flex-direction: row;
     justify-content: space-around;
     display: flex;
+    width:100%;
 
 }
 .enfermedad{
-    margin-left: 20px;
-    width: 140px;
+    margin-left: 25%;
+    width: 50%;
     height: 140px;
 }
 
 .inyeccion{
-    margin-left: 20px;
-    width: 140px;
+    margin-left: 25%;
+    width: 50%;
     height: 140px;
 
 }
 
 .hospital{
-    margin-left: 20px;
-    width: 140px;
+    margin-left: 25%;
+    width: 50%;
     height: 140px;
 }
 
@@ -156,8 +147,8 @@ text-align: center;
     text-align: center;
     font-family:  Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-color: rgb(98, 146, 165);
     -webkit-border-radius: 25px 25px 30px 25px;
+    padding-top: 1%;
 }
 
 
@@ -183,65 +174,78 @@ text-align: center;
 }
 }
 
+@media (max-width:600px){
+    .contenedorLlama{
+    height: 100px;
+}
+}
+
 .SiTenesSintomas{
-font-size: 35px;
+font-size: 2em;
 top: 30px;
 
 }
 
 @media (max-width : 1150px){
     .SiTenesSintomas{
-        font-size: 20px;
+        font-size: 1.5em;
+
+    }
+}
+@media (max-width : 600px){
+    .SiTenesSintomas{
+        font-size: 1em;
 
     }
 }
 
 .SiTenesSintomas2{
-    font-size: 100px;
+    font-size: 3em;
 }
 @media (max-width : 1150px){
     .SiTenesSintomas2{
-        font-size: 50px;
+        font-size: 2em;
 
     }
 }
+
+@media (max-width : 600px){
+    .SiTenesSintomas2{
+        font-size: 1em;
+
+    }
+}
+
 
 
 .telefono{
-    height: 300px;
-    width: 300px;
+    height: 90%;
+    width: 20%;
 }
 
-@media (max-width:1150px){
-    .telefono{
-    height: 150px;
-    width: 150px;
-    }
-}
+
 .telefono:hover{
-    height: 300px;
-    width: 300px;
+    height: 90%;
+    width: 20%;
     -moz-transform: rotate(15deg);
     -webkit-transform: rotate(15deg);
 
 }
 
-@media (max-width:1150px){
-    .telefono:hover{
-    height: 150px;
-    width: 150px;
-    -moz-transform: rotate(15deg);
-    -webkit-transform: rotate(15deg);
-    }
-}
+
 
 .numero{
-    font-size: 250px;
+    font-size: 15em;
 }
 
 @media (max-width:1150px){
     .numero{
-    font-size: 100px;
+    font-size: 8em;
+}
+}
+@media (max-width:600px){
+    .numero{
+    font-size: 4em;
 }
 }
 
@@ -258,14 +262,30 @@ top: 30px;
     height: 110px;
 }
 
+@media (max-width: 360px){
+    .pieDePagina{
+
+    
+    height: 200px;
+}
+}
+
 .integrantes{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     background-color: transparent;
 }
+
+
 @media (max-width:740px){
     .integrantes{
         font-size: 0.9em;
+    }
+}
+
+@media (max-width:550px){
+    .integrantes{
+        font-size: 0.7em;
     }
 }
 
@@ -291,7 +311,7 @@ top: 30px;
 }
 @media (max-width:740px){
     .menu{
-        font-size: 0.9em;
+        font-size:0.9em; 
     }
 }
 
@@ -316,6 +336,14 @@ top: 30px;
     }
 }
 
+
+@media (max-width : 600px){
+    .sub{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px; 
+    }
+}
 
 
 
