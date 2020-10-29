@@ -37,9 +37,9 @@
 
 </nav>
 
-    <main>
-        <div id="boxFiltro">
-            <input list="filtroBox" id="filtroBoxs" name="datalist"  placeholder="Filtrar por enfermedades">
+    <main class="mainBody">
+        <div id="boxFiltro" class="filtroBoxEnfermedades">
+            <input list="filtroBox" id="filtroBoxs" name="datalist"  placeholder="Filtrar por enfermedades" >
             <datalist id="filtroBox"class="">
                 <select class="" name="">
                     <option value="Covid-19"></option>
@@ -49,7 +49,7 @@
             </datalist>
         </div>
       <h3 id="titleCovid">Covid-19</h3>
-      <div id="enfermedadCovid"> <!-- donde dice href="" pones el link a la pagina que quieras-->
+      <div id="enfermedadCovid" class="classEnfermedadCovid"> <!-- donde dice href="" pones el link a la pagina que quieras-->
           <a href="DetalleDeLaEnfermedad.html"><img class="covidImg" src="img/covidBody.jpg" id="vectorCovid"></a> <!-- Aca podes linkearlo con la pagina de la enfermedad en detalle-->
           <p id="parrafoBreveCovid19">Las personas infectadas por COVID-19 muestran un amplio espectro de síntomas, que van desde una enfermedad leve
           similar al resfriado o la gripe hasta una dificultad respiratoria grave e incluso la muerte.
@@ -60,7 +60,7 @@
         <!--<a class="todoDelDetalles"href="DetalleDeLaEnfermedad.html">Ver detalles</a>  con el button tendria que usar "JS", despues le voy agregando las direcciones a cada uno-->
       </div>
         <h3 id="titleAsma">Asma</h3>
-      <div id="Asmaenfermedad">
+      <div id="Asmaenfermedad" class="classAsmaEnfermedad">
           <a href="DetalleDeLaEnfermedad.html"><img src="img/2038042.svg" id="vectorAsma"></a>
           <p id="parrafoBreveAsma">El asma es una afección crónica o prolongada que inflama y estrecha de manera intermitente las vías
           respiratorias en los pulmones. La inflamación hace que las vías respiratorias se hinchen. El asma causa períodos
@@ -70,7 +70,7 @@
 
       </div>
         <h3 id="titleZika">Zika</h3>
-      <div id="Zikaenfermedad">
+      <div id="Zikaenfermedad" class="classZikaEnfermedad">
         <a href="DetalleDeLaEnfermedad.html"> <img src="img/zikaBody.jpg" id="vectorZika"></a>
         <p id="parrafoBreveZika">La enfermedad por el virus de Zika es causada por un virus transmitido principalmente por mosquitos del género
         Aedes, que pican durante el día. Los síntomas, generalmente leves y de 2 a 7 días de duración, consisten en
