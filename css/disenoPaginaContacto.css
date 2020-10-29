@@ -94,3 +94,12 @@ label {
     width: 40px;
     border-radius: 100px;
 }
+@media screen and (max-width:1150px){
+    /*HAY QUE MODIFICAR LA PARTE DEL FORMULARIO Y DATO DE CONTACTOS*/
+}
+@media screen and (max-width: 600px){
+    /*HAY QUE MODIFICAR LA PARTE DEL FORMULARIO Y DATO DE CONTACTOS*/
+}
+@media screen and (max-width: 420px){
+    /*HAY QUE MODIFICAR LA PARTE DEL FORMULARIO Y DATO DE CONTACTOS*/
+}
