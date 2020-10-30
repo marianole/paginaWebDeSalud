@@ -164,18 +164,17 @@ label{
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-device-width:768px) {
   .ImagenConDescripcion{
     grid-template-columns: none;
-    width: 60%;
-    background-color: red;
+    /* width: 60%; */
   }
   body{
     font-size: 60%;
   }
   .sintomasYformulario{
     grid-template-columns: none;
-    width:60%;
+    /* width:60%; */
 
   }
   /* form{
@@ -184,13 +183,16 @@ label{
   } */
   .datosDeHospitalYimagen{
     grid-template-columns: none;
-    width: 60%;
+    /* width: 100%; */
   }
   .prevencionesImg{
-    width: 60%;
+    /* width: 100%; */
+  }
+  .mapa{
+    /* width: 60%; */
   }
   h1,h2,h3{
-    width: 60%;
+    /* width: 60%; */
   }
 
 }
