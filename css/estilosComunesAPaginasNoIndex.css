@@ -61,7 +61,6 @@ header{
         align-items: center;
         justify-content: center;
         border: black 1px solid;
-        position: sticky;/* agrege el sticky */
         top:0;
     }
 
@@ -97,17 +96,22 @@ header{
     display:-webkit-flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
     background-image: url("../img/151783-light-blue-vertical-lines-and-stripes-background.jpg");
     border:black 1px solid;
     padding: 10px;
     height: 110px;
+
 }
+
 @media (max-width: 360px){
     .pieDePagina{
 
-    
-    height: 200px;
+    flex-direction: column-reverse;
+    height: 150px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
 }
 }
 
@@ -139,6 +143,12 @@ header{
 
 }
 
+@media (max-width:550px){
+    .titulospiedepagina{
+        font-size: 0.8em;
+    }
+}
+
 
 
 .colorVinculos {
@@ -149,16 +159,43 @@ header{
     background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 1em;
 }
+
 @media (max-width:740px){
     .menu{
-        font-size:0.9em; 
+       
+        font-size: 0.8em;
     }
 }
 
+@media (max-width:360px){
+    .menu{
+        display:flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+        font-size: 0.6em;
+        margin-left: 5px;
+        list-style: none;
+        margin: 1%;
+    }
+}
+@media (max-width:360px){
+    .colorVinculos{
+        padding-left: 5px;
+    }
+}
+
+
+
+
+
 .redessociales{
     background-color:  transparent;
-    text-align: center;
+    display:flex;
+    align-content: center;
+    margin: auto;
+    
 }
 
 
@@ -185,5 +222,4 @@ header{
         margin-right: 5px; 
     }
 }
-
 

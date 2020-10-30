@@ -1,89 +1,118 @@
+
 main{
     margin-top: 0px;  /*100px*/
     margin-left: 0px;
     margin-bottom: 0px; /*100px*/
     margin-right: 0px;
     justify-content: space-around;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(107, 151, 170);
 }
 
 /*BODY*/
 
+.formularioYdatosDeContacto{
+    display: inline-flex;
+  }
 .formulario{
     display: grid;
     grid-template-columns: 150px 195px;
     grid-template-rows: 70px 70px 70px 200px 70px;
     justify-content: left;
-    /*background-color: #999999;*/
-    margin-right: 300px;
+    margin-right: 100px;
     clear: right;
     padding-right: 4%;
     padding-left: 11%;
     padding-bottom: 4%;
     padding-top: 2%;
-    width: 371px;
 }
+
+@media (max-width :900px){
+    .formulario{
+        display:flex;
+        flex-direction: column;
+
+    }
+}
+
 label {
     font-size: 98%;
 }
+
 .DatosDeContacto{
+    display:flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     bottom: 66px;
 
 }
-.ubicacion{
-    display: grid;
-    grid-template-rows: 50px 600px 50px;
+.contenedorMapa{
+    display:flex;
+    background-color: rgb(228, 228, 238);
+    width: 100%;
     justify-content: center;
-    background-color: rgba(43,43,43,0.56);
-}
-#nom_Apellido, #mail, #telf{
-    height: 24px;
-    width: 185px;
+    align-self: center;
+    align-content: center;
+
+    
 }
 
+.mapa{
+    height: 600px;
+    width:70%;
+}
+
+@media (max-width : 450px){
+    .mapa{
+        height: 400px;
+    }
+}
+#nom_Apellido, #mail, #telf{
+    height: 20px;
+    width: 100%;
+    margin: 2%;
+}
+
+
+
 #consulta{
-    height: 185px;
-    width: 185px;
-    display: block;
+    height: 200px;
+    width: 100%;
+    margin: 2%;
+
 }
 #botonEnviar{
     height: 31px;
     width: 73px;
-    position: relative;
     left: 270px;
     display: block;
     font-family: "Bebas Neue";
-    background-color: #2586d7;
+    background-color: #213f58;
     color: white;
     box-shadow: none;
-}
-#mail{
-    position: relative;
-    top: -7px;
-    display: block;
-}
-#telf{
-    position: relative;
-    top: -6px;
-    display: block;
-}
-#tituloUbicacion{
-    text-align: center;
+    
 }
 
 #tituloContacto{
     padding-left: 11%;
 }
-
-.mapaClass, #mapa{
-    justify-content: space-around;
-    width: 1080px;
-}
-.formularioYdatosDeContacto{
-  display: flex;
+#tituloUbicacion{
+    text-align: center;
+    background-color: #213e55;
+    height: 50px;
 }
 
+
+
+@media (max-width:900px){
+    .formularioYdatosDeContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+}
 #contactoIconFb, #contactoIconIg, #contactoIconUnl{
     height: 35px;
     width: 35px;
