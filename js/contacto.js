@@ -1,21 +1,13 @@
 /*Hello World*/
 function validarFormulario(){
+    /*Esta variable representa a los caracteres validos para que sea un email*/
     var regexp = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
-    if(document.formularioCompleto.nom_Apellido.lenght==0){
+    var mensajesError="";
 
-        alert("Debe completar nombre y apellido")
-        document.formularioCompleto.nom_Apellido.focus()
-        return 0;
+    if(document.getElementById("nom_Apellido").lengt==0){
+        mensajesError+="Es obligatorio ingresar su nombre y apellido";
+    }else{
+        document.getElementById("mensaje").innerHTML=mensajesError;
+        return false;
     }
-    if ((regexp.test(document.formularioCompleto.mail.value) == 0) || (document.formularioCompleto.mail.value.length = 0)) {
-        alert("Introduzca una direccion de email valida");
-        document.formularioCompleto.mail.focus();
-        return 0;
-    }
-    else {
-        var c_email=true;
-    }
-
-
-
 }
