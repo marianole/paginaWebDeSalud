@@ -41,7 +41,7 @@
             <!--Hello World!-->
         <h2 id="tituloContacto">CONTACTO</h2>
         <div class="formularioYdatosDeContacto">
-          <form class="formulario" id="formularioCompleto" onsubmit="return validarFormulario()">
+          <form class="formulario" id="formularioCompleto" action="#" onsubmit="return validarFormulario()">
 
               <label for="nom_Apellido"> Nombre y Apellido:</label>
               <input type="text" id="nom_Apellido" name="nombreApellido" placeholder="Ingrese su Nombre y Apellido..."  >
@@ -53,10 +53,8 @@
               <p><textarea id="consulta" name="consulText" placeholder="Escriba aquí su consulta..."></textarea></p>
               <!--<input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">-->
               <input type="submit" id="botonEnviar" name="EnviarBotonName" value="Enviar" >
+              <p id="mensaje" class="error"></p>
           </form >
-            <section>
-                <p id="mensaje" class="error"> <br> </p>
-            </section>
           <section class="DatosDeContacto" id="datosDeContactoID">
               <!--Hello World!-->
               <article>
