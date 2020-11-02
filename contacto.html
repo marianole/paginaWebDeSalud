@@ -50,12 +50,13 @@
               <label for="telf">Telefono (Opcional):</label>
               <input type="tel" id="telf" name="telefono" placeholder="Codigo de area + (15).....">
               <label for="consulta"></label>
-              <input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">
-              <div id="mensaje" class="error">
-              </div>
+              <p><textarea id="consulta" name="consulText" placeholder="Escriba aquí su consulta..."></textarea></p>
+              <!--<input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">-->
               <input type="submit" id="botonEnviar" name="EnviarBotonName" value="Enviar" >
           </form >
-          
+            <section>
+                <p id="mensaje" class="error"> <br> </p>
+            </section>
           <section class="DatosDeContacto" id="datosDeContactoID">
               <!--Hello World!-->
               <article>
@@ -78,7 +79,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.010412491933!2d-58.66246648503382!3d-34.654439967690024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf5900e2bc6d%3A0x6b4dce9d03e1501e!2sSanatorio%20del%20Oeste%20Ituzaing%C3%B3!5e0!3m2!1ses-419!2sar!4v1602627034361!5m2!1ses-419!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa" class="mapaClass"></iframe>
           </section>
       </main>
-    <link src="../js/contacto.js">
+    <script scr="js/contacto.js"></script>
 </body>
 
 <footer class="pieDePagina">

@@ -4,10 +4,8 @@ function validarFormulario(){
     var regexp = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
     var mensajesError="";
 
-    if(document.getElementById("nom_Apellido").lengt==0){
-        mensajesError+="Es obligatorio ingresar su nombre y apellido";
-    }else{
-        document.getElementById("mensaje").innerHTML=mensajesError;
-        return false;
+    if(document.getElementById("nom_Apellido").lengt==0) {
+        mensajesError += "Es obligatorio ingresar su nombre y apellido";
+        document.getElementById("mensaje").innerHTML = mensajesError;
     }
 }
