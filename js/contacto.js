@@ -7,7 +7,14 @@ function validarFormulario(){
     if(document.getElementById("nom_Apellido").value=='') {
         mensajesError += "Es obligatorio ingresar su nombre y apellido";
 
-    }else{
+    }
+    if((regexp.test(document.form.mail.value) == 0)){
+        mensajesError +="El mail ingresado es incorrecto";
+    }
+    if((document.form.mail.value.length = 0)){
+        mensajesError +="Debe ingresar un mail";
+    }
+    else{
         document.getElementById("mensaje").innerHTML = mensajesError;
         return false;
     }
