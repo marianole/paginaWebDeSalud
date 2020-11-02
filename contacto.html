@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-
     <link rel="shortcut icon" href="img/logoFinal.png">
     <link rel="stylesheet" href="css/disenoPaginaContacto.css">
     <link rel="stylesheet" href="css/estilosComunesAPaginasNoIndex.css">
@@ -41,82 +39,74 @@
 <body>
     <main>
             <!--Hello World!-->
-            <h2 id="tituloContacto">CONTACTO</h2>
-
+        <h2 id="tituloContacto">CONTACTO</h2>
         <div class="formularioYdatosDeContacto">
-
-          <form class="formulario" id="formularioCompleto">
+          <form class="formulario" id="formularioCompleto" action="#" onsubmit="return validarFormulario()">
 
               <label for="nom_Apellido"> Nombre y Apellido:</label>
-              <input type="text" id="nom_Apellido" name="nombreApellido" placeholder="Ingrese su Nombre y Apellido...">
+              <input type="text" id="nom_Apellido" name="nombreApellido" placeholder="Ingrese su Nombre y Apellido..."  >
               <label for="mail">Mail:</label>
               <input type="text" id="mail" name="mailIngresar" placeholder="cliente@contacto.com">
               <label for="telf">Telefono (Opcional):</label>
               <input type="tel" id="telf" name="telefono" placeholder="Codigo de area + (15).....">
               <label for="consulta"></label>
-              <input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">
-              <input type="button" id="botonEnviar" name="EnviarBotonName" value="Enviar">
-          </form>
-          
-
+              <p><textarea id="consulta" name="consulText" placeholder="Escriba aquí su consulta..."></textarea></p>
+              <!--<input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">-->
+              <input type="submit" id="botonEnviar" name="EnviarBotonName" value="Enviar" >
+              <p id="mensaje" class="error"></p>
+          </form >
           <section class="DatosDeContacto" id="datosDeContactoID">
+              <!--Hello World!-->
               <article>
                   <h2>DATOS DE CONTACTO</h2>
                   <p><h5>Direccion:</h5> Gral. Félix Olazábal 319, B1714 FZC, Provincia de Buenos Aires<br>
                   <h5>Telefonos:</h5> 0810-333-4411<br>
                   <h5>Email:</h5> ministeriosalud@argentina.gob<br>
                   <h5>Web:</h5> https://www.sanatoriosdeloeste.com</p>
-                  <a href="https://www.instagram.com/buenosaires/?hl=es-la" ><img src="img/instagram.png" id="contactoIconIg"></a>
-                  <a href="https://www.facebook.com/GCBA/" ><img src="img/facebook.png" id="contactoIconFb"></a>
-                  <a href="https://www.unlam.edu.ar/" > <img src="img/unlam.png" id="contactoIconUnl"></a>
               </article>
-              
+              <a href="https://www.instagram.com/buenosaires/?hl=es-la" ><img src="img/instagram.png" id="contactoIconIg"></a>
+              <a href="https://www.facebook.com/GCBA/" ><img src="img/facebook.png" id="contactoIconFb"></a>
+              <a href="https://www.unlam.edu.ar/" > <img src="img/unlam.png" id="contactoIconUnl"></a>
               
               <!--FALTAN AGREGAR LOS TRES ICONOS DE LAS REDES SOCIALES-->
           </section>
         </div>
-
-        <h2 id="tituloUbicacion">UBICACIÓN</h2>
-        <section class="contenedorMapa" id="ubicacionMapaGrande">
+        <section class="ubicacion" id="ubicacionMapaGrande">
             <!--Hello World!-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.010412491933!2d-58.66246648503382!3d-34.654439967690024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf5900e2bc6d%3A0x6b4dce9d03e1501e!2sSanatorio%20del%20Oeste%20Ituzaing%C3%B3!5e0!3m2!1ses-419!2sar!4v1602627034361!5m2!1ses-419!2sar" class="mapa"></iframe>
+            <h2 id="tituloUbicacion">UBICACIÓN</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.010412491933!2d-58.66246648503382!3d-34.654439967690024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf5900e2bc6d%3A0x6b4dce9d03e1501e!2sSanatorio%20del%20Oeste%20Ituzaing%C3%B3!5e0!3m2!1ses-419!2sar!4v1602627034361!5m2!1ses-419!2sar" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa" class="mapaClass"></iframe>
           </section>
       </main>
-
-
+    <script scr="js/contacto.js"></script>
+</body>
 
 <footer class="pieDePagina">
-  <div>
-    <h4 class="titulospiedepagina">Datos Del Grupo:</h4>
-    <ul class="integrantes">
-        <li class="colorVinculos">Ledesma Mariano - DNI : 43.180.856</li>
-        <li class="colorVinculos">Cristian Gabriel Quipildor - DNI : 41.623.360 </li>
-        <li class="colorVinculos">Fernandez Melian Cristian - DNI : 41.139.455</li>
-    </ul>
-  </div>
-
-  <div>
-
-    <h4 class="titulospiedepagina">Menú inferior</h4>
-    <ul class="menu">
-        <li><a href="listadoDeEnfermedades.html" class="colorVinculos">Enfermedades</a></li>
-        <li><a href="vacunas.html" class="colorVinculos" >Vacunas</a></li>
-        <li><a href="mapaDeHospitales.html" class="colorVinculos">Hospitales</a></li>
-        <li><a href="contacto.html" class="colorVinculos">Contacto</a></li>
+    <div>
+      <ul class="integrantes"> 
+        <h4 class="titulospiedepagina">Datos Del Grupo:</h4>
+          <li class="colorVinculos">Ledesma Mariano - DNI : 43.180.856</li>
+          <li class="colorVinculos">Cristian Gabriel Quipildor - DNI : 41.623.360 </li>
+          <li class="colorVinculos">Fernandez Melian Cristian - DNI : 41.139.455</li>
       </ul>
-  </div>
+    </div>
+    <div>
 
-  <div>
-  <h4 class="titulospiedepagina">Redes Sociales</h4>
-  <section class="redessociales">
-    <a href="https://www.unlam.edu.ar/"  target="_blank"><img src="img/unlam.png" class="sub"></a>
-    <a href="https://www.facebook.com/GCBA/" target="_blank"><img src="img/facebook.png"  class="sub"></a>
-    <a href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank"><img src="img/instagram.png"  class="sub"></a>
+      <ul class="menu"> 
+        <h4 class="titulospiedepagina">Menú inferior</h4>
+          <li><a href="listadoDeEnfermedades.html" class="colorVinculos">Enfermedades</a></li>
+          <li><a href="vacunas.html" class="colorVinculos" >Vacunas</a></li>
+          <li><a href="mapaDeHospitales.html" class="colorVinculos">Hospitales</a></li>
+          <li><a href="contacto.html" class="colorVinculos">Contacto</a></li>
+        </ul>
+    </div>
 
-  </section>
-</div>
-</footer>
+    <div class="redessociales">
+      <h4 class="titulospiedepagina">Redes Sociales</h4>
+      <a href="https://www.unlam.edu.ar/"  target="_blank"><img src="img/unlam.png" class="sub"></a>
+      <a href="https://www.facebook.com/GCBA/" target="_blank"><img src="img/facebook.png"  class="sub"></a>
+      <a href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank"><img src="img/instagram.png"  class="sub"></a>
 
-</body>
+    </div>
+  </footer> 
 
 </html>
