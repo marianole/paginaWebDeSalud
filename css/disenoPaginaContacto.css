@@ -120,12 +120,21 @@ label {
 }
 
 
-@media screen and (max-width:1150px){
-    /*HAY QUE MODIFICAR LA PARTE DEL FORMULARIO Y DATO DE CONTACTOS*/
+.error{
+    color:rgb(158, 6, 6);
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
-@media screen and (max-width: 600px){
-    /*HAY QUE MODIFICAR LA PARTE DEL FORMULARIO Y DATO DE CONTACTOS*/
+
+.excedio{
+    color:rgb(158, 6, 6);
+    font-weight: bold;
+    font-size: 1.1em;
 }
-@media screen and (max-width: 420px){
-    /*HAY QUE MODIFICAR LA PARTE DEL FORMULARIO Y DATO DE CONTACTOS*/
+
+#cantidad{
+    font-size: 1.1em;
+
 }

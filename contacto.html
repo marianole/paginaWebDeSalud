@@ -45,19 +45,33 @@
 
         <div class="formularioYdatosDeContacto">
 
-          <form class="formulario" id="formularioCompleto">
+
+
+
+          <form class="formulario" id="formularioCompleto" action="" method="GET" onsubmit="return validacionDeFormulario()">
 
               <label for="nom_Apellido"> Nombre y Apellido:</label>
-              <input type="text" id="nom_Apellido" name="nombreApellido" placeholder="Ingrese su Nombre y Apellido...">
+              <input type="text" id="nom_Apellido" name="nombreApellido" value='' placeholder="Ingrese su Nombre y Apellido...">
+             
               <label for="mail">Mail:</label>
-              <input type="text" id="mail" name="mailIngresar" placeholder="cliente@contacto.com">
+              <input type="text" id="mail" name="mailIngresar" value='' placeholder="cliente@contacto.com" >
+
               <label for="telf">Telefono (Opcional):</label>
-              <input type="tel" id="telf" name="telefono" placeholder="Codigo de area + (15).....">
+              <input type="tel" id="telf" name="telefono" value='' placeholder="EJ : 1234-5678">
+
               <label for="consulta"></label>
-              <input type="text" id="consulta" name="consulText" placeholder="Escriba aquí su consulta...">
-              <input type="button" id="botonEnviar" name="EnviarBotonName" value="Enviar">
+              <textarea name="consulText"  id="consulta" onkeyup="contarCaracteres();"></textarea>
+              <p id="cantidad" name="cantidad"> 1000  caracteres disponibles</p>
+
+
+              <input type="submit" id="botonEnviar" name="EnviarBotonName" value="Enviar" >
+              <div id="mensajeDeError" class="error"> </div>
           </form>
           
+
+
+
+
 
           <section class="DatosDeContacto" id="datosDeContactoID">
               <article>
@@ -116,7 +130,7 @@
   </section>
 </div>
 </footer>
-
 </body>
+<script src ="js/contacto.js"></script>
 
 </html>
