@@ -106,7 +106,7 @@ main{
     width: 100%;
   }
   #enfermedadCovid, #Asmaenfermedad, #Zikaenfermedad{
-    grid-template-columns: 24% 93%;
+    grid-template-columns: 49% 66%;
   }
 }
 
@@ -115,13 +115,13 @@ main{
     widht: 100px;
   }
   #enfermedadCovid, #Asmaenfermedad, #Zikaenfermedad{
-    grid-template-columns: 44% 57%;
+    grid-template-columns: 78% 45%;
   }
 }
 @media screen and (max-width: 420px){
   #enfermedadCovid, #Asmaenfermedad, #Zikaenfermedad{
     font-size: small;
-    grid-template-columns: 76% 93%;
+    grid-template-columns: 127% 68%;
   }
 }
 
