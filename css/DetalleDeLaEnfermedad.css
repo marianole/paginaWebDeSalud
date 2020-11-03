@@ -152,6 +152,7 @@ input{
   font-size: 1em;
 }
 
+
 label{
   display: flex;
   margin-bottom: 10px;
@@ -159,10 +160,22 @@ label{
 }
 
 .radio{
+  display:inline;
   width: auto;
   margin-bottom: 10px;
 }
+/* mostrar ocultar de js */
+.select{
+  display: flex;
+  width: 100%;
+}
+.select, .labelRara{
+   display:none;
+}
 
+#labelD, #direccion{
+  display:none;
+}
 
 @media screen and (max-device-width:768px) {
   .ImagenConDescripcion{

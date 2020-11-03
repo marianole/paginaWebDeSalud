@@ -87,20 +87,17 @@ privacidad descritos en 'Ver las condiciones y políticas</p>
           H<input class="radio"  type="radio" name="sexo">
           M<input class="radio"  type="radio" name="sexo">
         <label class="pregunta"  for="viajes">¿Ha viajado por la republica argentina?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
-          Si<input class="radio" type="radio" name="viajes">
-          No<input class="radio" type="radio" name="viajes">
-        <label class="labelRara" for="paises">-Paises visitados</label>
-        <input list="datalist" id="paises"name="paises" placeholder="paises">
-        <datalist id="datalist">
-          <select class="" name="">
-  <option value="salta"></option>
-  <option value="jujuy"></option>
-  <option value="cordoba"></option>
-  <option value="catamarca"></option>
-  <option value="tierra del fuego"></option>
+          Si<input class="radio" type="radio" name="viajes" value="mostrar" onclick="opcion()">
+          No<input class="radio" type="radio" name="viajes" value="ocultar" onclick="opcion()">
+        <label class="labelRara" id="labelP" for="paises" >-Paises visitados</label>
+        <select class="select" name="paises" id="select">
+  <option >elija una opcion</option>
+  <option >Jujuy</option>
+  <option value="cordoba">Cordoba</option>
+  <option value="catamarca">Catamarca</option>
+  <option value="tierra del fuego">Tierra del fuego</option>
           </select>
 
-        </datalist>
   <h3>Sintomas presentados</h3>
         <label class="pregunta"  for="fiebre">¿Tuviste Fiebre mayor a 38 grados?</label>
           Si<input class="radio" type="radio" name="fiebre">
@@ -115,17 +112,16 @@ privacidad descritos en 'Ver las condiciones y políticas</p>
           Si<input class="radio"type="radio"              name="dolorDeGarganta">
           No<input class="radio"class="radio"type="radio" name="dolorDeGarganta">
         <label class="pregunta"for="respirar">¿Tuviste deficultades para respirar?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
-          Si<input class="radio"type="radio" name="respirar">
-          No<input class="radio"type="radio" name="respirar">
+          Si<input class="radio"type="radio" name="respirar" value="mostrar" onclick="mostrarOcultar()">
+          No<input class="radio"type="radio" name="respirar" value="ocultar" onclick="mostrarOcultar()">
 
 
-          <label class="labelRara"for="direccion">-Direccion</label>
+          <label class="dereccion" id="labelD" for="direccion">-Direccion</label>
                <input type="text"  id="direccion"name="direccion" placeholder="Direccion" maxlength="50">
 
-         <label for=""></label>
             <input type="reset"  name="reset">
           <input type="submit" name="submit">
-  <div id="contenedor"><p>"HOLA GENTE"</p></div>
+  <div id="contenedor"></div>
   </form>
 
   </div>

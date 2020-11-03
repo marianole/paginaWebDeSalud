@@ -127,3 +127,57 @@ function validacion(){
   divContenedor.style.color="red";
   return error;
 }
+
+
+
+
+
+
+function opcion(){
+
+  var opciones=document.getElementsByName('viajes');
+var labelRara=document.getElementById("labelP");
+var select=document.getElementsByName('paises');
+
+
+  for(var i in opciones){
+    if(opciones[i].checked && opciones[i].value=="mostrar"){
+      labelRara.style.display="flex";
+      select[0].style.display="flex";
+      select[0].style.width="100%";
+      break;
+    }else{
+      labelRara.style.display="none";
+      select[0].style.display="none";
+      break;
+    }
+  }
+
+}
+
+
+function mostrarOcultar(){
+
+  var opciones=document.getElementsByName('respirar');
+var labelD=document.getElementById("labelD");
+var direccion=document.getElementById('direccion');
+
+
+  for(var i in opciones){
+    if(opciones[i].checked && opciones[i].value=="mostrar"){
+      labelD.style.display="flex";
+      direccion.style.display="flex";
+      direccion.style.marginBottom="15px";
+
+      break;
+    }else{
+      labelD.style.display="none";
+      direccion.style.display="none";
+      break;
+    }
+  }
+
+}
+
+
+
