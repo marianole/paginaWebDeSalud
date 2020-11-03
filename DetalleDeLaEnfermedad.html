@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="css/estilosComunesAPaginasNoIndex.css">
     <link rel="shortcut icon" href="img/logoFinal.png">
     <meta charset="utf-8">
+    <script src="js/formulario_detalleDeEnfermedades.js">
+
+    </script>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <title>COVID-19</title>
   </head>
@@ -71,60 +74,61 @@ privacidad descritos en 'Ver las condiciones y políticas</p>
 <img class="sintomasImg"src="img\sintomasDelCoronavirus.png" alt="">
   </div>
 
-<form class="deteccion" action="" method="post">
-     <label for="NombreYapellido">*Nombre y Apellido</label>
-          <input type="text"   id="NombreYapellido"name="NombreYapellido" placeholder="Ingrese nombre y apellido" required maxlength="50">
-     <label for="documento">*DNI</label>
-          <input type="number" id="documento"name="documento" placeholder="00.000.000" required maxlength="8">
-     <label for="telefono">*Telefono celular</label>
-          <input type="tel"    id="telefono" name="telefono" placeholder="011 23185649" >
-     <label for="ciudad" >*Ciudad</label>
-          <input type="text"   id="ciudad"name="ciudad" required placeholder="buenos aires">
-      <label class="pregunta"  for="sexo">*sexo:</label>
-        H<input class="radio"  type="radio" name="sexo">
-        M<input class="radio"  type="radio" name="sexo">
-      <label class="pregunta"  for="viajes">¿Ha viajado por la republica argentina?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
-        Si<input class="radio" type="radio" name="viajes">
-        No<input class="radio" type="radio" name="viajes">
-      <label class="labelRara" for="paises">-Paises visitados</label>
-      <input list="datalist" id="paises"name="paises" placeholder="paises">
-      <datalist id="datalist">
-        <select class="" name="">
-<option value="salta"></option>
-<option value="jujuy"></option>
-<option value="cordoba"></option>
-<option value="catamarca"></option>
-<option value="tierra del fuego"></option>
-        </select>
+  <form class="deteccion" action="" method="post" onsubmit="return validacion()">
+       <label for="NombreYapellido">*Nombre y Apellido</label>
+            <input type="text"   id="NombreYapellido"name="NombreYapellido" placeholder="Ingrese nombre y apellido" maxlength="50">
+       <label for="documento">*DNI</label>
+            <input type="number" id="documento"name="documento" placeholder="00.000.000" maxlength="8">
+       <label for="telefono">*Telefono celular</label>
+            <input type="tel"    id="telefono" name="telefono" placeholder="011 23185649" >
+       <label for="ciudad" >*Ciudad</label>
+            <input type="text"   id="ciudad"name="ciudad"  placeholder="buenos aires">
+        <label class="pregunta"  for="sexo">*sexo:</label>
+          H<input class="radio"  type="radio" name="sexo">
+          M<input class="radio"  type="radio" name="sexo">
+        <label class="pregunta"  for="viajes">¿Ha viajado por la republica argentina?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
+          Si<input class="radio" type="radio" name="viajes">
+          No<input class="radio" type="radio" name="viajes">
+        <label class="labelRara" for="paises">-Paises visitados</label>
+        <input list="datalist" id="paises"name="paises" placeholder="paises">
+        <datalist id="datalist">
+          <select class="" name="">
+  <option value="salta"></option>
+  <option value="jujuy"></option>
+  <option value="cordoba"></option>
+  <option value="catamarca"></option>
+  <option value="tierra del fuego"></option>
+          </select>
 
-      </datalist>
-<h3>Sintomas presentados</h3>
-      <label class="pregunta"  for="fiebre">¿Tuviste Fiebre mayor a 38 grados?</label>
-        Si<input class="radio" type="radio" name="fiebre">
-        No<input class="radio" type="radio" name="fiebre">
-      <label class="pregunta" for="DolorDeCabeza">¿Tuviste dolor de cabeza?</label>
-        Si<input class="radio"type="radio" name="DolorDeCabeza">
-        No<input class="radio"type="radio" name="DolorDeCabeza">
-      <label class="pregunta"for="tos">¿Tuviste una tos persistente?</label>
-        Si<input class="radio"type="radio" name="tos">
-        No<input class="radio"type="radio" name="tos">
-      <label class="pregunta"for="dolorDeGarganta">¿Tuviste dolor de garganta?</label>
-        Si<input class="radio"type="radio" name="dolorDeGarganta">
-        No<input class="radio"class="radio"type="radio" name="dolorDeGarganta">
-      <label class="pregunta"for="respirar">¿Tuviste deficultades para respirar?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
-        Si<input class="radio"type="radio" name="respirar">
-        No<input class="radio"type="radio" name="respirar">
+        </datalist>
+  <h3>Sintomas presentados</h3>
+        <label class="pregunta"  for="fiebre">¿Tuviste Fiebre mayor a 38 grados?</label>
+          Si<input class="radio" type="radio" name="fiebre">
+          No<input class="radio" type="radio" name="fiebre">
+        <label class="pregunta" for="DolorDeCabeza">¿Tuviste dolor de cabeza?</label>
+          Si<input class="radio"type="radio" name="DolorDeCabeza">
+          No<input class="radio"type="radio" name="DolorDeCabeza">
+        <label class="pregunta"for="tos">¿Tuviste una tos persistente?</label>
+          Si<input class="radio"type="radio" name="tos">
+          No<input class="radio"type="radio" name="tos">
+        <label class="pregunta"for="dolorDeGarganta">¿Tuviste dolor de garganta?</label>
+          Si<input class="radio"type="radio"              name="dolorDeGarganta">
+          No<input class="radio"class="radio"type="radio" name="dolorDeGarganta">
+        <label class="pregunta"for="respirar">¿Tuviste deficultades para respirar?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
+          Si<input class="radio"type="radio" name="respirar">
+          No<input class="radio"type="radio" name="respirar">
 
 
-        <label class="labelRara"for="direccion">-Direccion</label>
-             <input type="text"  id="direccion"name="direccion" placeholder="Direccion" required maxlength="50">
+          <label class="labelRara"for="direccion">-Direccion</label>
+               <input type="text"  id="direccion"name="direccion" placeholder="Direccion" maxlength="50">
 
-       <label for=""></label>
-          <input type="reset"  name="reset">
-        <input type="submit" name="submit">
+         <label for=""></label>
+            <input type="reset"  name="reset">
+          <input type="submit" name="submit">
+  <div id="contenedor"><p>"HOLA GENTE"</p></div>
+  </form>
 
-</form>
-</div>
+  </div>
 
 
 </article>
