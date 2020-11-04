@@ -5,9 +5,7 @@
     <link rel="stylesheet" href="css/estilosComunesAPaginasNoIndex.css">
     <link rel="shortcut icon" href="img/logoFinal.png">
     <meta charset="utf-8">
-    <script src="js/formulario_detalleDeEnfermedades.js">
 
-    </script>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <title>COVID-19</title>
   </head>
@@ -100,19 +98,19 @@ privacidad descritos en 'Ver las condiciones y políticas</p>
 
   <h3>Sintomas presentados</h3>
         <label class="pregunta"  for="fiebre">¿Tuviste Fiebre mayor a 38 grados?</label>
-          Si<input class="radio" type="radio" name="fiebre">
+          Si<input class="radio" type="radio" name="fiebre" id="fiebreSi" value="si">
           No<input class="radio" type="radio" name="fiebre">
         <label class="pregunta" for="DolorDeCabeza">¿Tuviste dolor de cabeza?</label>
-          Si<input class="radio"type="radio" name="DolorDeCabeza">
+          Si<input class="radio"type="radio" name="DolorDeCabeza" id="dolorDeCabezaSI" value="si">
           No<input class="radio"type="radio" name="DolorDeCabeza">
         <label class="pregunta"for="tos">¿Tuviste una tos persistente?</label>
-          Si<input class="radio"type="radio" name="tos">
+          Si<input class="radio"type="radio" name="tos" id="tosSI" value="si">
           No<input class="radio"type="radio" name="tos">
         <label class="pregunta"for="dolorDeGarganta">¿Tuviste dolor de garganta?</label>
-          Si<input class="radio"type="radio"              name="dolorDeGarganta">
+          Si<input class="radio"type="radio" name="dolorDeGarganta" id="dolorGargantaSI" value="si">
           No<input class="radio"class="radio"type="radio" name="dolorDeGarganta">
         <label class="pregunta"for="respirar">¿Tuviste deficultades para respirar?</label><!-- se tendria que desplegar un datalist, pero todavia no se como -->
-          Si<input class="radio"type="radio" name="respirar" value="mostrar" onclick="mostrarOcultar()">
+          Si<input class="radio"type="radio" name="respirar" value="mostrar" onclick="mostrarOcultar()" id="respirarSI" value="si">
           No<input class="radio"type="radio" name="respirar" value="ocultar" onclick="mostrarOcultar()">
 
 
@@ -185,5 +183,8 @@ privacidad descritos en 'Ver las condiciones y políticas</p>
   </section>
 </div>
 </footer>
+<script src="js/formulario_detalleDeEnfermedades.js">
+
+</script>
   </body>
 </html>

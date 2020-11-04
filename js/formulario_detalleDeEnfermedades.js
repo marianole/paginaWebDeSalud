@@ -122,10 +122,29 @@ function validacion(){
    }
 
 
+    var contadoresDeSintomas=0;
+    if(document.getElementById("fiebreSi").value=="si"){
+        contadoresDeSintomas++;
+    }
+    if(document.getElementById("dolorDeCabezaSI").value=="si"){
+        contadoresDeSintomas++;
+    }
+    if(document.getElementById("tosSI").value=="si"){
+        contadoresDeSintomas++;
+    }
+    if(document.getElementById("dolorGargantaSI").value=="si"){
+        contadoresDeSintomas++;
+    }
+    if(document.getElementById("respirarSI").value=="si"){
+        contadoresDeSintomas++;
+    }
 
-  divContenedor.innerHTML=mensajeDeError;
+
+    divContenedor.innerHTML=mensajeDeError;
   divContenedor.style.color="red";
+  alert("El formulario fue completado correctamente." + contadoresDeSintomas + " sintomas de COVID-19 fueron registrados");
   return error;
+
 }
 
 
@@ -176,6 +195,7 @@ var direccion=document.getElementById('direccion');
       break;
     }
   }
+
 
 }
 
