@@ -123,20 +123,20 @@ function validacion(){
 
 
     var contadoresDeSintomas=0;
-    if(document.getElementById("fiebreSi").value=="si"){
-        contadoresDeSintomas++;
+    if(document.getElementById("fiebreSi").value=="si" && !document.getElementById("fiebreSi")==null){
+        contadoresDeSintomas+=1;
     }
-    if(document.getElementById("dolorDeCabezaSI").value=="si"){
-        contadoresDeSintomas++;
+    if(document.getElementById("dolorDeCabezaSI").value=="si" && !document.getElementById("dolorDeCabezaSI")==null){
+        contadoresDeSintomas+=1;
     }
-    if(document.getElementById("tosSI").value=="si"){
-        contadoresDeSintomas++;
+    if(document.getElementById("tosSI").value=="si" && !document.getElementById("tosSI").value==null){
+        contadoresDeSintomas+=1;
     }
-    if(document.getElementById("dolorGargantaSI").value=="si"){
-        contadoresDeSintomas++;
+    if(document.getElementById("dolorGargantaSI").value=="si" && !document.getElementById("dolorGargantaSI")==null){
+        contadoresDeSintomas+=1;
     }
-    if(document.getElementById("respirarSI").value=="si"){
-        contadoresDeSintomas++;
+    if(document.getElementById("respirarSI").value=="si" && !document.getElementById("respirarSI")==null){
+        contadoresDeSintomas+=1;
     }
 
 
