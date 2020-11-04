@@ -1,11 +1,5 @@
-/* main{
 
-  margin: 75px;
-
-} */
 *{
-  /* font-size: 1rm; */
-  font-size: 1em;
   font-family: 'Muli', sans-serif;
 }
 h1{
@@ -182,9 +176,7 @@ label{
     grid-template-columns: none;
     /* width: 60%; */
   }
-  body{
-    font-size: 60%;
-  }
+  
   .sintomasYformulario{
     grid-template-columns: none;
     /* width:60%; */
