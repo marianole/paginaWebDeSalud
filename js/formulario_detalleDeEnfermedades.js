@@ -136,7 +136,7 @@ function validacion(){
   }
 
   if (error == true){
-    alert(`La cantidad de sintomas es de ${contador}`);
+    alert(`El formulario fue completado correctamente. ${contador} sintomas de COVID-19 fueron registrados`);
   }
   return error;
 }
