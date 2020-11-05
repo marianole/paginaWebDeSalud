@@ -125,6 +125,20 @@ function validacion(){
 
   divContenedor.innerHTML=mensajeDeError;
   divContenedor.style.color="red";
+
+  var contador = 0;
+  var radio = document.getElementsByClassName('radio');
+  for (var i = 0 ; i < radio.length ; i ++){
+    if (radio[i].checked == true){
+    if (radio[i].value == '1'){
+      contador++;
+    }
+    }
+  }
+
+  if (error == true){
+    alert(`La cantidad de sintomas es de ${contador}`);
+  }
   return error;
 }
 
@@ -164,7 +178,7 @@ var direccion=document.getElementById('direccion');
 
 
   for(var i in opciones){
-    if(opciones[i].checked && opciones[i].value=="mostrar"){
+    if(opciones[i].checked && opciones[i].value=="1"){
       labelD.style.display="flex";
       direccion.style.display="flex";
       direccion.style.marginBottom="15px";
