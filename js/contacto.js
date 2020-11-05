@@ -20,6 +20,15 @@ function validacionDeFormulario(){
     var regexTelefono = /^[0-9]{4}[-]{1}[0-9]{4}$/;
     var mensajesError="";
 
+    if ((telefono.value =='')){
+        error=false;
+    } else {
+        if (!regexTelefono.test(telefono.value)){ //el campo telefono debe contener el formato solicitado
+            error =true;
+            mensajesError+= "<p>* El telefono debe contener el siguiente formato 0000-0000 </p>";
+    
+        }
+    }
 
 
    if ((nombre.value=='')){ //El campo nombre NO DEBE estar vacio
@@ -37,16 +46,10 @@ function validacionDeFormulario(){
         mensajesError+= "<p>* Ese formato de email no es disponible</p>"
     }
 
-    if ((telefono.value == '')){ //El campo telefono NO DEBE estar vacio
-        error = true;
-        mensajesError+= "<p>* El campo del telefono no puede estar vacio </p>";
-    }
+   
 
-   else if (!regexTelefono.test(telefono.value)){ //el campo telefono debe contener el formato solicitado
-        error =true;
-        mensajesError+= "<p>* El telefono debe contener el siguiente formato 0000-0000 </p>";
 
-    }
+ 
 
     if (!contarCaracteres()){
         error =true;
