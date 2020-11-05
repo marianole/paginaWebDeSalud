@@ -1,6 +1,5 @@
 
 
-
 function validacion(){
   var mensajeDeError="";
   var divContenedor=document.getElementById('contenedor');
@@ -122,27 +121,9 @@ function validacion(){
    }
 
 
-    var contadoresDeSintomas=0;
-    if(document.getElementById("fiebreSi").value=="si" && !document.getElementById("fiebreSi")==null){
-        contadoresDeSintomas+=1;
-    }
-    if(document.getElementById("dolorDeCabezaSI").value=="si" && !document.getElementById("dolorDeCabezaSI")==null){
-        contadoresDeSintomas+=1;
-    }
-    if(document.getElementById("tosSI").value=="si" && !document.getElementById("tosSI").value==null){
-        contadoresDeSintomas+=1;
-    }
-    if(document.getElementById("dolorGargantaSI").value=="si" && !document.getElementById("dolorGargantaSI")==null){
-        contadoresDeSintomas+=1;
-    }
-    if(document.getElementById("respirarSI").value=="si" && !document.getElementById("respirarSI")==null){
-        contadoresDeSintomas+=1;
-    }
 
-
-    divContenedor.innerHTML=mensajeDeError;
+  divContenedor.innerHTML=mensajeDeError;
   divContenedor.style.color="red";
-
 
   var contador = 0;
   var radio = document.getElementsByClassName('radio');
@@ -155,10 +136,9 @@ function validacion(){
   }
 
   if (error == true){
-    alert("El formulario fue completado correctamente." + contadoresDeSintomas + " sintomas de COVID-19 fueron registrados");
+    alert(`La cantidad de sintomas es de ${contador}`);
   }
   return error;
-
 }
 
 
@@ -210,8 +190,4 @@ var direccion=document.getElementById('direccion');
     }
   }
 
-
 }
-
-
-
