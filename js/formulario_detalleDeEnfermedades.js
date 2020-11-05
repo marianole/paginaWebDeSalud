@@ -142,7 +142,7 @@ function validacion(){
 
     divContenedor.innerHTML=mensajeDeError;
   divContenedor.style.color="red";
-<<<<<<< HEAD
+
 
   var contador = 0;
   var radio = document.getElementsByClassName('radio');
@@ -155,11 +155,8 @@ function validacion(){
   }
 
   if (error == true){
-    alert(`La cantidad de sintomas es de ${contador}`);
+    alert("El formulario fue completado correctamente." + contadoresDeSintomas + " sintomas de COVID-19 fueron registrados");
   }
-=======
-  alert("El formulario fue completado correctamente." + contadoresDeSintomas + " sintomas de COVID-19 fueron registrados");
->>>>>>> ec28111ea2a7acbb42874b70e616d1437cb6a07f
   return error;
 
 }
