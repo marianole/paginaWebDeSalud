@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="img/logoFinal.png" alt="logo">
     <link rel ="stylesheet" type ="text/css" href="css/EstiloMapaDeHospitales.css">
     <link rel="stylesheet" href="css/estilosComunesAPaginasNoIndex.css">
+    <script type="text/javascript" src="js\jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js\MapaPopUp.js"></script>
 
 </head>
 <body>
@@ -48,6 +51,39 @@
 </section>
 
 <main>
+     <div class="info">
+       <a href="#" id="uno">primerHospital</a>
+       <a href="#" id="dos">segundoHospital</a>
+       <a href="#" id="tres">tercerHospital</a>
+     </div>
+     <article class="popup uno">
+       <h2>Nombre del Hospita</h2>
+       <ul>
+         <li>Direccion:</li>
+         <li>Localidad:</li>
+       </ul>
+       <a href="#" id="cerrar">cerrar</a>
+     </article>
+
+     <article class="popup dos">
+       <h2>Nombre del Hospita2</h2>
+       <ul>
+         <li>Direccion:</li>
+         <li>Localidad:</li>
+       </ul>
+       <a href="#" id="cerrar2">cerrar</a>
+     </article>
+
+     <article class="popup tres">
+       <h2>Nombre del Hospita3</h2>
+       <ul>
+         <li>Direccion:</li>
+         <li>Localidad:</li>
+       </ul>
+       <a href="#" id="cerrar3">cerrar</a>
+     </article>
+
+
     <section class="contenedorMapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d52505.51568814918!2d-58.565787466546816!3d-34.66493652216938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitales%20!5e0!3m2!1ses-419!2sar!4v1602124192803!5m2!1ses-419!2sar" class="mapa"></iframe>
     </section>

@@ -20,7 +20,7 @@
     font-weight: bold;
     font-size: 40px;
     text-align: center;
-    
+
 }
 
 .contenedorMapa{
@@ -29,12 +29,27 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(228, 228, 238);
-    
+
 }
 
 .mapa{
-    
+
     height: 600px;
     width: 70%;
-    
+
+}
+.popup{
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(26, 157, 238);
+  width: 40%;
+  height: auto;
+  /* text-align: center; */
+  left:30%;
+  top:30%;
+  border:5px solid rgb(0, 87, 255);
+}
+h2{
+  text-align: center;
 }
