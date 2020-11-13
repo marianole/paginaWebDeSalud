@@ -1,0 +1,31 @@
+
+
+.slider{
+display:flex;
+width: 100%;
+margin: auto;
+}
+
+.imgCarrousel{
+    height: 45em;
+    width: 100%;
+}
+
+.slick-next{
+    margin-right: 50px;
+    z-index: 5;
+
+}    
+.slick-prev{
+    margin-left: 40px;
+    z-index: 5;
+    
+}
+
+@media only screen and (max-width:700px){
+    .imgCarrousel{
+        height: 25em;
+
+    }
+
+}
