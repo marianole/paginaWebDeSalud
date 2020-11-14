@@ -45,11 +45,48 @@
   background-color: rgb(26, 157, 238);
   width: 40%;
   height: auto;
-  /* text-align: center; */
   left:30%;
   top:30%;
   border:5px solid rgb(0, 87, 255);
 }
 h2{
   text-align: center;
+  margin-bottom: 10%;
+}
+#cerrar,#cerrar2,#cerrar3{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.popup li{
+  margin-bottom: 10%;
+
+}
+.popupHospitales{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+#uno,#dos,#tres{
+color: white;
+background-color: rgb(20, 117, 233);
+padding: 10px;
+text-decoration: none;
+box-sizing: border-box;
+}
+#uno:hover{
+
+  color:black;
+background-color: rgb(96, 181, 255);
+}
+#dos:hover{
+
+  color:black;
+background-color: rgb(96, 181, 255);
+}
+#tres:hover{
+
+  color:black;
+background-color: rgb(96, 181, 255);
 }
