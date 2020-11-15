@@ -5,73 +5,78 @@
     <title>Calendario de vacunacion</title>
     <link rel="shortcut icon" href="img/logoFinal.png">
     <link rel="stylesheet" href="css/estilosComunesAPaginasNoIndex.css">
-</head>
+    <link rel="stylesheet" href="css/vacunas.css">
+    <link href="css/fullcalendar.min.css" rel='stylesheet' />
+    <link href="css/fullcalendar.print.min.css" rel='stylesheet' media='print' />
+    <script src="js/moment.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/calendario.js"></script>
 
-<body>
+</head>
+ <body>
     <header>
 
-        <img class="elemento0"src="img\logoFinal.png" alt="imagen">
+            <img class="elemento0"src="img\logoFinal.png" alt="imagen">
 
-        <div class="elemento1">
-        <img class="elemento2"src="img\search.png" alt="fotoDeBusqueda">
-        <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
-        <datalist id="Buscador"> <!--este datalist debo ponerle en id el nombre del imput list-->
-            <select class="">
-                <option value="Covid-19"></option>
-                <option value="Asma"></option>
-                <option value="Zika"></option> 
+            <div class="elemento1">
+            <img class="elemento2"src="img\search.png" alt="fotoDeBusqueda">
+            <input list="Buscador" id="seachBoxToMove" name="datalist"  placeholder="Ingrese aquí para buscar...">
+            <datalist id="Buscador"> <!--este datalist debo ponerle en id el nombre del imput list-->
+                <select class="">
+                    <option value="Covid-19"></option>
+                    <option value="Asma"></option>
+                    <option value="Zika"></option>
 
-            </select>
-        </datalist>
+                </select>
+            </datalist>
 
-        </div>
+            </div>
 
-    </header>
+        </header>
+    <nav class="menuSuperior">
+     <a href="index.html" class="menuItem">Inicio</a>
+     <a href="vacunas.html" class="menuItem">Vacunas</a>
+     <a href="mapaDeHospitales.html" class="menuItem">Hospitales</a>
+     <a href="contacto.html" class="menuItem">Contacto</a>
+     <a href="listadoDeEnfermedades.html" class="menuItem">Enfermedades</a>
 
-<nav class="menuSuperior">
- <a href="index.html" class="menuItem">Inicio</a>
- <a href="vacunas.html" class="menuItem">Vacunas</a>
- <a href="mapaDeHospitales.html" class="menuItem">Hospitales</a>
- <a href="contacto.html" class="menuItem">Contacto</a>
- <a href="listadoDeEnfermedades.html" class="menuItem">Enfermedades</a>
+    </nav>
 
-</nav>
+    <main>
+        <article id="calendar"></article>
+    </main>
 
+    <footer class="pieDePagina">
+      <div>
+        <h4 class="titulospiedepagina">Datos Del Grupo:</h4>
+        <ul class="integrantes">
+            <li class="colorVinculos">Ledesma Mariano - DNI : 43.180.856</li>
+            <li class="colorVinculos">Cristian Gabriel Quipildor - DNI : 41.623.360 </li>
+            <li class="colorVinculos">Fernandez Melian Cristian - DNI : 41.139.455</li>
+        </ul>
+      </div>
 
-<p >sitio en construccion</p>
+      <div>
 
+        <h4 class="titulospiedepagina">Menú inferior</h4>
+        <ul class="menu">
+            <li><a href="listadoDeEnfermedades.html" class="colorVinculos">Enfermedades</a></li>
+            <li><a href="vacunas.html" class="colorVinculos" >Vacunas</a></li>
+            <li><a href="mapaDeHospitales.html" class="colorVinculos">Hospitales</a></li>
+            <li><a href="contacto.html" class="colorVinculos">Contacto</a></li>
+          </ul>
+      </div>
 
-  <footer class="pieDePagina">
-  <div>
-    <h4 class="titulospiedepagina">Datos Del Grupo:</h4>
-    <ul class="integrantes">
-        <li class="colorVinculos">Ledesma Mariano - DNI : 43.180.856</li>
-        <li class="colorVinculos">Cristian Gabriel Quipildor - DNI : 41.623.360 </li>
-        <li class="colorVinculos">Fernandez Melian Cristian - DNI : 41.139.455</li>
-    </ul>
-  </div>
+      <div>
+      <h4 class="titulospiedepagina">Redes Sociales</h4>
+      <section class="redessociales">
+        <a href="https://www.unlam.edu.ar/"  target="_blank"><img src="img/unlam.png" class="sub"></a>
+        <a href="https://www.facebook.com/GCBA/" target="_blank"><img src="img/facebook.png"  class="sub"></a>
+        <a href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank"><img src="img/instagram.png"  class="sub"></a>
 
-  <div>
-
-    <h4 class="titulospiedepagina">Menú inferior</h4>
-    <ul class="menu">
-        <li><a href="listadoDeEnfermedades.html" class="colorVinculos">Enfermedades</a></li>
-        <li><a href="vacunas.html" class="colorVinculos" >Vacunas</a></li>
-        <li><a href="mapaDeHospitales.html" class="colorVinculos">Hospitales</a></li>
-        <li><a href="contacto.html" class="colorVinculos">Contacto</a></li>
-      </ul>
-  </div>
-
-  <div>
-  <h4 class="titulospiedepagina">Redes Sociales</h4>
-  <section class="redessociales">
-    <a href="https://www.unlam.edu.ar/"  target="_blank"><img src="img/unlam.png" class="sub"></a>
-    <a href="https://www.facebook.com/GCBA/" target="_blank"><img src="img/facebook.png"  class="sub"></a>
-    <a href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank"><img src="img/instagram.png"  class="sub"></a>
-
-  </section>
-</div>
-</footer>
-
-</body>
+      </section>
+    </div>
+    </footer>
+ </body>
 </html>

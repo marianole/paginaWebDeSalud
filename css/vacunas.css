@@ -1,0 +1,12 @@
+#calendar {
+ width: 80%;
+ height: 80%;
+ margin: auto;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fc-content{
+ border-color: tomato;
+ background-color: red;
+ color: white;
+}
+
