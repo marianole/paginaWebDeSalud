@@ -1,9 +1,7 @@
 $(document).ready(function() {
 
     $('#calendar').fullCalendar({
-	  //defaultDate: moment().format("YYYY-MM-DD"), //Arranca a partir del día actual
-      //editable: true,
-      //eventLimit: true, // allow "more" link when too many events
+
       events: [
         {
           title: 'Vacunas Covid',
