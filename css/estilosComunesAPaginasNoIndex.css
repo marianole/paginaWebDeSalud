@@ -2,6 +2,7 @@
     margin: 0;
     padding: auto   ;
 }
+
 header{
     display: flex;
     flex-wrap: nowrap;
@@ -12,7 +13,7 @@ header{
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 2;
+    z-index: 10;
     height: 100px;
     padding-right: 5%;
     position: sticky;
@@ -23,11 +24,22 @@ header{
   
   
   .elemento0{
-      margin-left: 20px;
+
+      margin-left: 5%;
       height: 80px;
       width: 80px;
-      padding-left: 70px;
+      padding-left: 5%;
   
+  }
+
+  @media (max-width:500px){
+    .elemento0{
+
+        height: 60px;
+        width: 60px;
+       
+    
+    }
   }
   
   .elemento1{
@@ -42,12 +54,13 @@ header{
       width: 50px;
   }
   
+  
   #seachBoxToMove{
       height: 40px;
       width: 100% ;
   
   }
-
+  
 
 .menuSuperior{
     
@@ -56,28 +69,30 @@ header{
         flex-direction: row;
         flex-wrap: wrap;
         background-color: #2586d7;
-        height: 45px;
+        height: 55px;
         margin: auto;
-        align-items: center;
         justify-content: center;
         border: black 1px solid;
         top:0;
     }
-
-
-    @media (max-width: 650px){
+@media (max-width:560px){
     .menuSuperior{
-        height: 140px;
-        font-size: 15px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+        padding: 0%;
     }
-}
+    }
 
+
+   
 
 .menuItem{
     color: whitesmoke ;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.2em;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -88,7 +103,17 @@ header{
 .menuItem:hover{
     background-color:white;
     color: black;
+    border-bottom: grey;
+    
 }
+@media (max-width:630px){
+.menuItem{
+    border-bottom: grey;
+    font-size: 1em;
+}
+
+}
+
 
 .pieDePagina{
     display:flex;
@@ -223,3 +248,34 @@ header{
     }
 }
 
+
+
+a.desplegable{
+    display: block;
+    width: 100%;
+    height: 55px;
+    background-image: url(../img/hamburger.gif);
+    background-repeat: no-repeat;
+    background-color: #06a8de;
+    border: black 1px solid;
+
+    top:0;
+    right: 0;
+    
+    
+    cursor: pointer;
+    z-index: 5;
+}
+a.desplegable:hover{
+    background-color:#000;
+}
+
+@media screen and (min-width:560px){
+    
+    .menu{
+        display:block;
+    }
+    a.desplegable{
+        display: none;
+    }
+}
